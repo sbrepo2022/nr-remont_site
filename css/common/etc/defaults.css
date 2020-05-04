@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+
+    font-size: var(--font-size-normal);
+    font: 400 16px 'Trebuchet MS', sans-serif;
+}
+
+a {
+    color: var(--color-black);
+    outline: none;
+}
+
+a:hover, a:visited {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    background: none;
+}
+
+button:active, button:focus {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+h1 {
+
+}
+
+h2 {
+    font-size: 54px;
+}
+
+input[type="radio"] {
+    display: none;
+}

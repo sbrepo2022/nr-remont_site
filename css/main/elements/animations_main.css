@@ -1,0 +1,25 @@
+@keyframes scroll-ind-anim {
+    0% {
+        transform: translateX(0px);
+    }
+
+    16% {
+        transform: translateX(0px);
+    }
+
+    33% {
+        transform: translateX(8px);
+    }
+
+    67% {
+        transform: translateX(8px);
+    }
+
+    84% {
+        transform: translateX(0px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}

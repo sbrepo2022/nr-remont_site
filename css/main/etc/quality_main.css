@@ -1,0 +1,8 @@
+.remont-example-surface {
+    width: 930px;
+    display: inline-block;
+}
+
+.remont-example-surface > div {
+    border-radius: 5px;
+}

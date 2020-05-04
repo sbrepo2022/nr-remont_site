@@ -1,0 +1,46 @@
+.block-header {
+    background: var(--color-bg-dark) no-repeat center center;
+    color: var(--color-white);
+}
+
+.logo-block {
+    padding-top: 35px;
+}
+
+.logo {
+    font-family: 'EVO';
+}
+
+.logo-descr {
+    font-family: 'Solomon Sans';
+}
+
+.main-title-overlay {
+    margin-top: 80px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 768px) {
+    .main-title {
+        font-size: 150pt;
+        font-family: 'EVO';
+    }
+}
+
+@media (max-width: 767.98px) {
+    .main-title {
+        font-size: 110pt;
+        font-family: 'EVO';
+    }
+}
+
+.main-title-overlay h1 {
+    font-family: 'Solomon Sans';
+    font-size: 30px;
+    line-height: 120%;
+    font-weight: 500;
+    margin-bottom: 30px;
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}

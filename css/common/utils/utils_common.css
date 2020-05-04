@@ -1,0 +1,104 @@
+.container-930 {
+    max-width: 960px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.container-1000 {
+    max-width: 1030px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.wrapper-4-3 {
+	position: relative;
+	width: 100%;
+	padding-bottom: 75%;
+}
+
+.wrapper-16-9 {
+	position: relative;
+	width: 100%;
+	padding-bottom: 56.25%;
+}
+
+.content-aspect {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.icon-small {
+    display: inline-block;
+	width: 1em;
+	height: 1em;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.font-s-normal-x0-75 {
+    font-size: var(--font-size-normal-x0-75);
+}
+
+.font-s-normal {
+    font-size: var(--font-size-normal);
+}
+
+.font-s-normal-x1-25 {
+    font-size: var(--font-size-normal-x1-25);
+}
+
+.font-s-normal-x1-5 {
+    font-size: var(--font-size-normal-x1-5);
+}
+
+.font-s-big {
+    font-size: var(--font-size-big);
+}
+
+.font-s-big-x1-5 {
+    font-size: var(--font-size-big-x1-5);
+}
+
+.font-f-evo {
+    font-family: 'EVO';
+}
+
+/* font params */
+.uppercase {
+    text-transform: uppercase;
+}
+
+.line-h-120 {
+    line-height: 120% !important;
+}
+
+.letter-s-0-1 {
+    letter-spacing: 0.1em;
+}
+
+.letter-s-0-2 {
+    letter-spacing: 0.2em;
+}
+
+.weight-400 {
+    font-weight: 400;
+}
+
+.weight-500 {
+    font-weight: 500;
+}
+
+.weight-600 {
+    font-weight: 600;
+}
+
+.weight-700 {
+    font-weight: 700;
+}
+
+.weight-800 {
+    font-weight: 800;
+}

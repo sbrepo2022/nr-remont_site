@@ -1,0 +1,44 @@
+* {
+    --font-size-big: 18px; /* кратные 3-м */
+    --font-size-big-x1-5: 27px;
+
+    --font-size-normal-x0-75: 12px;
+    --font-size-normal: 16px; /* кратные 2-м */
+    --font-size-normal-x1-25: 20px;
+    --font-size-normal-x1-5: 24px;
+}
+
+/* xs */
+@media (max-width: 575.98px) {
+	:root {
+
+	}
+}
+
+/* sm */
+@media (max-width: 767.98px) and (min-width: 576px) {
+	:root {
+
+	}
+}
+
+/* md */
+@media (max-width: 991.98px) and (min-width: 768px) {
+	:root {
+
+	}
+}
+
+/* lg */
+@media (max-width: 1199.98px) and (min-width: 992px) {
+	:root {
+
+	}
+}
+
+/* xl */
+@media (min-width: 1200px) {
+	:root {
+
+	}
+}

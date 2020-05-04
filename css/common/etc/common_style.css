@@ -1,0 +1,28 @@
+.page-wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: inline-block;
+    margin-left: -285px;
+
+    transition: all .3s ease;
+}
+
+.page-wrapper.open-nav {
+    margin-left: 0px;
+}
+
+.page {
+    position: relative;
+    width: 100vw;
+    max-height: 100vh;
+    margin-left: 285px;
+}
+
+.nav-open-button {
+    position: fixed;
+    top: 40px;
+    left: 40px;
+    width: 22px;
+    height: 22px;
+}
