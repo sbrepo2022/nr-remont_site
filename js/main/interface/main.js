@@ -29,7 +29,10 @@ $(() => {
 
     examples_swiper.on('transitionEnd', function () {
         console.log(examples_swiper.realIndex);
-        $(`input[name="examples"][tab-index="${examples_swiper.realIndex + 1}"]`).prop("checked", true);
+        $(`input[name="examples"][tab-index="${examples_swiper.realIndex}"]`).prop("checked", true);
+
+        $('.quality-price').removeClass('opacity-1');
+        $(`.quality-price[data-index="${examples_swiper.realIndex}"]`).addClass('opacity-1');
     });
 
     $('input[name="examples"]').on('click', function () {

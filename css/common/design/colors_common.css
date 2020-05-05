@@ -4,7 +4,10 @@
 
     --color-white: #fff;
     --color-black: #000;
+    --color-default: #444;
 
     --color-sidebar-bg: #252525;
     --color-bg-dark: #847d77;
+    --color-light-gray: rgba(237,237,237,.5);
+    --color-gray: #dadada;
 }

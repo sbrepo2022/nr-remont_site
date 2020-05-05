@@ -41,6 +41,13 @@
 .image-cover {
     background-size: cover;
 	background-repeat: no-repeat;
+    background-position: center;
+}
+
+.image-contain {
+    background-size: contain;
+	background-repeat: no-repeat;
+    background-position: center;
 }
 
 .font-s-normal-x0-75 {
@@ -110,4 +117,12 @@
 
 .weight-800 {
     font-weight: 800;
+}
+
+.opacity-0 {
+    opacity: 0 !important;
+}
+
+.opacity-1 {
+    opacity: 1 !important;
 }

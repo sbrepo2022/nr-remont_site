@@ -8,6 +8,7 @@ body {
 
     font-size: var(--font-size-normal);
     font: 400 16px 'Trebuchet MS', sans-serif;
+    color: var(--color-default);
 }
 
 a {

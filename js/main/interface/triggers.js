@@ -25,6 +25,18 @@ function Interface() {
                 $('html, body').animate({ scrollTop : t_offset}, 1500);
             }
         },
+
+        {
+            event: 'change',
+            selector: 'input[name="examples"]',
+            callback: function () {
+                if (this.checked) {
+                    let index = $(this).attr('tab-index');
+                    $('.quality-price').removeClass('opacity-1');
+                    $(`.quality-price[data-index="${index}"]`).addClass('opacity-1');
+                }
+            }
+        }
     ];
 
     /* метод проходится по массиву bindings и регистрирует обработчики */
