@@ -2,10 +2,13 @@ $(() => {
     let interface = new Interface();
     interface.init();
 
+    let tooltip_dialog = new TooltipDialog('#examplesTooltip');
+    tooltip_dialog.bindTo('.example-point');
+
     let examples_swiper = new Swiper ('#examplesSwiper', {
         // Optional parameters
         direction: 'horizontal',
-        loop: true,
+        loop: false,
 
         // If we need pagination
         pagination: {

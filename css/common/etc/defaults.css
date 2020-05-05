@@ -43,3 +43,7 @@ h2 {
 input[type="radio"] {
     display: none;
 }
+
+strong {
+    font-weight: 700;
+}

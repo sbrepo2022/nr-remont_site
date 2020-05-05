@@ -1,0 +1,44 @@
+.tooltip-dialog {
+    display: none;
+    z-index: 2000;
+    position: absolute;
+    padding: 30px;
+    box-shadow: 0 12px 30px rgba(64,64,64,.19);
+    border-radius: 5px;
+    background-color: var(--color-white);
+    transition: opacity .3s ease;
+}
+
+.tooltip-dialog::after {
+    content: ' ';
+    position: absolute;
+    top: 50%;
+    transform-origin: center center;
+    transform: translateY(-50%);
+    right: -19px;
+    border: 10px solid rgba(255, 255, 255, 0);
+    border-left: 10px solid rgba(255, 255, 255, 1);
+    width: 1px;
+    height: 1px;
+}
+
+.tooltip-dialog > h3 {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    letter-spacing: 2.2px;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+}
+
+.tooltip-dialog > p {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    line-height: 120%;
+    margin: 0;
+}
+
+.tooltip-spacer {
+    height: 8px;
+}

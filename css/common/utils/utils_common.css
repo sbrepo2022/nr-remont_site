@@ -38,6 +38,11 @@
 	background-repeat: no-repeat;
 }
 
+.image-cover {
+    background-size: cover;
+	background-repeat: no-repeat;
+}
+
 .font-s-normal-x0-75 {
     font-size: var(--font-size-normal-x0-75);
 }
@@ -81,6 +86,10 @@
 
 .letter-s-0-2 {
     letter-spacing: 0.2em;
+}
+
+.weight-300 {
+    font-weight: 300;
 }
 
 .weight-400 {

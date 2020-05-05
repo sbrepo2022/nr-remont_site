@@ -31,3 +31,23 @@
     background-color: var(--color-white);
     animation: scroll-ind-anim 2s ease infinite;
 }
+
+.example-point {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #fceab7;
+    border-radius: 50%;
+    box-shadow: inset 0 2px 4px rgba(71,57,20,.5),0 2px 31px rgba(33,33,33,.23);
+    border: 9px solid #fff;
+    cursor: pointer;
+
+    transform-origin: center center;
+    transition: all .3s ease;
+    animation: pulse 1s infinite;
+}
+
+.example-point:hover {
+    background: #ffd14e;
+    animation: none;
+}
