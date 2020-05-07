@@ -1,0 +1,12 @@
+.achieve-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px 20px;
+}
+
+.achievment {
+    position: relative;
+    padding: 0.5rem;
+    border: 1px solid var(--color-gray);
+    border-radius: 5px;
+}

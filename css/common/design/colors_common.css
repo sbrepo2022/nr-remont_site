@@ -11,3 +11,7 @@
     --color-light-gray: rgba(237,237,237,.5);
     --color-gray: #dadada;
 }
+
+.color-black {
+    color: var(--color-black);
+}

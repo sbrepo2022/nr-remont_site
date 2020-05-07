@@ -1,0 +1,24 @@
+.map-contacts {
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    left: 60%;
+    right: 2rem;
+    transform: translateY(-50%);
+
+    background-color: rgba(255, 255, 255, .8);
+    padding: 1rem;
+}
+
+.icon-map {
+    display: inline-block;
+	min-width: 3rem;
+	min-height: 3rem;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.map-link, .map-link:hover {
+    position: relative; 
+    color: #444 !important;
+}

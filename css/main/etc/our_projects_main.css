@@ -1,0 +1,100 @@
+.realised-grid {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 17rem);
+    grid-template-areas:
+        "item-1 item-1 item-4"
+        "item-2 item-3 item-4"
+        "item-5 item-6 item-7"
+        "item-5 item-8 item-8"
+    ;
+}
+
+.realised-grid-2 {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 23rem);
+    grid-template-areas:
+        "item-1"
+        "item-2"
+        "item-3"
+    ;
+}
+
+.grid-elem {
+    position: relative;
+}
+
+.item-1 {
+    grid-area: item-1;
+}
+
+.item-2 {
+    grid-area: item-2;
+}
+
+.item-3 {
+    grid-area: item-3;
+}
+
+.item-4 {
+    grid-area: item-4;
+}
+
+.item-5 {
+    grid-area: item-5;
+}
+
+.item-6 {
+    grid-area: item-6;
+}
+
+.item-7 {
+    grid-area: item-7;
+}
+
+.item-8 {
+    grid-area: item-8;
+}
+
+.realised-image-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    background-color: rgba(0, 0, 0, 0);
+    transition: all .3s ease;
+}
+
+.realised-image-overlay:hover {
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.realised-image-overlay > button {
+    display: none;
+}
+
+.realised-image-overlay:hover > button {
+    display: inline-block;
+}
+
+.realised-descr {
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+
+    letter-spacing: .2em;
+    font-size: .8rem;
+    text-transform: uppercase;
+    color: var(--color-white);
+}
+
+.img-cases-bottom {
+    position: absolute;
+    left: 0px;
+    bottom: -4rem;
+}

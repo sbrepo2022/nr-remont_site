@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="48px"
+   height="48px"
+   viewBox="0 0 48 48"
+   version="1.1"
+   id="svg11"
+   sodipodi:docname="whatsapp.svg"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)">
+  <metadata
+     id="metadata15">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="751"
+     inkscape:window-height="480"
+     id="namedview13"
+     showgrid="false"
+     inkscape:zoom="4.9166667"
+     inkscape:cx="-12.610169"
+     inkscape:cy="24"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg11" />
+  <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
+  <title
+     id="title2">Whatsapp-black</title>
+  <desc
+     id="desc4">Created with Sketch.</desc>
+  <defs
+     id="defs6" />
+  <g
+     id="Icons"
+     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1">
+    <g
+       id="Black"
+       transform="translate(-700,-360)"
+       style="fill:#ffffff;fill-opacity:1">
+      <path
+         d="M 723.99303,360 C 710.76225,360 700,370.76529 700,383.9998 c 0,5.24865 1.69266,10.11622 4.57003,14.06715 l -2.99042,8.91685 9.22484,-2.94826 C 714.59861,406.54697 719.12643,408 724.00697,408 737.23775,408 748,397.23431 748,384.0002 c 0,-13.23451 -10.76225,-23.9998 -23.99303,-23.9998 h -0.0139 z m -6.70018,12.19084 c -0.46536,-1.11456 -0.81807,-1.15677 -1.52308,-1.18544 -0.24004,-0.0139 -0.50756,-0.0279 -0.80413,-0.0279 -0.91719,0 -1.87618,0.26798 -2.4546,0.8605 -0.70501,0.71955 -2.4542,2.39835 -2.4542,5.84117 0,3.44282 2.51073,6.77256 2.8491,7.23845 0.35271,0.46509 4.89487,7.63266 11.94736,10.55384 5.51508,2.28566 7.15161,2.07382 8.40677,1.80583 1.83359,-0.39501 4.13293,-1.75008 4.71135,-3.38628 0.57842,-1.63699 0.57842,-3.03387 0.40884,-3.33013 -0.16919,-0.29626 -0.63495,-0.46509 -1.33996,-0.8183 -0.70501,-0.3528 -4.13293,-2.04594 -4.78181,-2.27172 -0.63495,-0.23971 -1.24123,-0.1549 -1.72053,0.52244 -0.67714,0.94532 -1.33995,1.90498 -1.87618,2.48316 -0.42316,0.45156 -1.11464,0.50811 -1.69266,0.26799 -0.77587,-0.32413 -2.94782,-1.08668 -5.62813,-3.47109 -2.07363,-1.84804 -3.48405,-4.14763 -3.89289,-4.83891 -0.40923,-0.70521 -0.0422,-1.11495 0.28185,-1.49563 0.3527,-0.43762 0.69108,-0.74781 1.04378,-1.15716 0.3527,-0.40895 0.55015,-0.62079 0.77587,-1.10062 0.24004,-0.4655 0.0705,-0.94532 -0.0987,-1.29813 -0.16918,-0.3528 -1.5796,-3.79562 -2.15802,-5.1921 z"
+         id="Whatsapp"
+         inkscape:connector-curvature="0"
+         style="fill:#ffffff;fill-opacity:1" />
+    </g>
+  </g>
+</svg>

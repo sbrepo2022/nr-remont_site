@@ -32,8 +32,24 @@
 
 .icon-small {
     display: inline-block;
-	width: 1em;
-	height: 1em;
+	min-width: 1rem;
+	min-height: 1rem;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.icon-normal {
+    display: inline-block;
+	min-width: 1.5rem;
+	min-height: 1.5rem;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.icon-big {
+    display: inline-block;
+	min-width: 4rem;
+	min-height: 4rem;
 	background-size: contain;
 	background-repeat: no-repeat;
 }
@@ -51,27 +67,31 @@
 }
 
 .font-s-normal-x0-75 {
-    font-size: var(--font-size-normal-x0-75);
+    font-size: var(--font-size-normal-x0-75) !important;
 }
 
 .font-s-normal {
-    font-size: var(--font-size-normal);
+    font-size: var(--font-size-normal) !important;
 }
 
 .font-s-normal-x1-25 {
-    font-size: var(--font-size-normal-x1-25);
+    font-size: var(--font-size-normal-x1-25) !important;
 }
 
 .font-s-normal-x1-5 {
-    font-size: var(--font-size-normal-x1-5);
+    font-size: var(--font-size-normal-x1-5) !important;
+}
+
+.font-s-normal-x2 {
+    font-size: var(--font-size-normal-x2) !important;
 }
 
 .font-s-big {
-    font-size: var(--font-size-big);
+    font-size: var(--font-size-big) !important;
 }
 
 .font-s-big-x1-5 {
-    font-size: var(--font-size-big-x1-5);
+    font-size: var(--font-size-big-x1-5) !important;
 }
 
 .font-f-evo {
@@ -125,4 +145,11 @@
 
 .opacity-1 {
     opacity: 1 !important;
+}
+
+.center-div {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }

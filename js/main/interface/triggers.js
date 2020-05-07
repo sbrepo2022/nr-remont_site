@@ -36,6 +36,18 @@ function Interface() {
                     $(`.quality-price[data-index="${index}"]`).addClass('opacity-1');
                 }
             }
+        },
+
+        {
+            event: 'click',
+            selector: '[data-toggle="tab-calc"]',
+            callback: function () {
+                let href = $(this).attr('data-target');
+                $('#calcTabs > .tab-pane').removeClass('show');
+                $('#calcTabs > .tab-pane').removeClass('active');
+                $(href).tab('show');
+                console.log(href);
+            }
         }
     ];
 

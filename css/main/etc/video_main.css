@@ -1,0 +1,31 @@
+.accent-line {
+    display: inline-block;
+    width: 5rem;
+    height: 2px;
+    background-color: #ff9000;
+}
+
+.video-prev-wrapper {
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.video-prev {
+    height: 100%;
+    transition: all .6s ease;
+}
+
+.video-prev:hover {
+    transform: scale(1.05);
+}
+
+.video-time-label {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: .8rem;
+    color: var(--color-white);
+    background-color: rgba(0, 0, 0, .6);
+    padding: 0px 8px 0px 8px;
+    border-radius: 12px;
+}
