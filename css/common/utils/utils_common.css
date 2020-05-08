@@ -111,6 +111,10 @@
     line-height: 120% !important;
 }
 
+.line-h-1-4 {
+    line-height: 1.4em !important;
+}
+
 .letter-s-0-1 {
     letter-spacing: 0.1em;
 }

@@ -195,7 +195,7 @@
                                     ₽/м²
                                 </div>
                             </div>
-                            <a class="dashed-link anim-underline" href="#">Посмотреть полный список работ</a>
+                            <a class="dashed-link anim-underline" data-toggle="modal" href="#allExamplesModal">Посмотреть полный список работ</a>
                         </div>
                     </div>
                 </section>
@@ -1521,6 +1521,129 @@
             <div class="menu-button-line"></div>
             <div class="menu-button-line"></div>
         </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="allExamplesModal" tabindex="-1" role="dialog" aria-labelledby="allExamplesModalLabel" aria-hidden="true">
+            <div class="container container-930 modal-dialog dialog-common-style" role="document">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <label><input type="radio" class="examples-tab" name="examples-descr" data-target="#examplesDescr1" checked><span class="primary-outline-button mr-2">Стандарт</span></label>
+                        <label><input type="radio" class="examples-tab" name="examples-descr" data-target="#examplesDescr2"><span class="primary-outline-button mr-2">Комфорт</span></label>
+                        <label><input type="radio" class="examples-tab" name="examples-descr" data-target="#examplesDescr3"><span class="primary-outline-button">Премиум</span></label>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <div class="tab-content text-left" id="examplesDescrTabContent">
+                            <div class="tab-pane fade show active" id="examplesDescr1" role="tabpanel">
+                                <div class="row line-h-1-4">
+                                    <div class="col-lg-4 col-12">
+                                        <div class="mb-4">
+                                            <div class="font-s-big uppercase letter-s-0-1 weight-700 mb-2">Общестроительные работы</div>
+                                            Демонтажные работы<br>Снабжение объекта материалами
+                                        </div>
+                                        <div class="mb-4">
+                                            <div class="font-s-big uppercase letter-s-0-1 weight-700 mb-2">Потолки</div>
+                                            Монтаж натяжного потолка<br>Монтаж реечного потолка
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-12">
+                                        <div class="mb-4">
+                                            <div class="font-s-big uppercase letter-s-0-1 weight-700 mb-2">Стены</div>
+                                            Штукатурка стен высококачественная<br>Устройство стен из ГКЛ<br>Возведение стен и перегородок<br>Оклейка стен обоями<br>Герметизация оконных проемов<br>Облицовка плиткой
+                                        </div>
+                                        <div class="mb-4">
+                                            <div class="font-s-big uppercase letter-s-0-1 weight-700 mb-2">Полы</div>
+                                            Устройство стяжки<br>Монтаж сухой стяжки KNAUF<br>Самовыравнивающая стяжка<br>Настил ламината<br>Облицовка плиткой<br>Гидроизоляция (только с/у)
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-12">
+                                        <div class="mb-4">
+                                            <div class="font-s-big uppercase letter-s-0-1 weight-700 mb-2">Электромонтажные работы</div>
+                                            Полный комплекс работ<br>Монтаж осветительных приборов
+                                        </div>
+                                        <div class="mb-4">
+                                            <div class="font-s-big uppercase letter-s-0-1 weight-700 mb-2">Сантехнические работы</div>
+                                            Монтаж системы водоснабжения<br>Монтаж системы канализации<br>Установка сантехнических приборов<br>Монтаж радиаторов отопления
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="examplesDescr2" role="tabpanel">
+                                <div class="row">
+                                    <div class="col-lg-4 col-12">
+                                        <div class="mb-4">
+                                            <div class="font-s-big uppercase letter-s-0-1 weight-700 mb-2">Общестроительные работы</div>
+                                            Демонтажные работы<br>Снабжение объекта материалами
+                                        </div>
+                                        <div class="mb-4">
+                                            <div class="font-s-big uppercase letter-s-0-1 weight-700 mb-2">Потолки</div>
+                                            Штукатурка потолка высококачественная<br>Шпатлевание потолка<br>Устройство ГКЛ-потолков<br>Окраска потолк<br>Монтаж натяжного потолка<br>Монтаж реечного потолка
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-12">
+                                        <div class="mb-4">
+                                            <div class="font-s-big uppercase letter-s-0-1 weight-700 mb-2">Стены</div>
+                                            Штукатурка стен высококачественная<br>Устройство стен из ГКЛ<br>Возведение стен и перегородок<br>Устройство декоративной штукатурки<br>Окраска стен (в т.ч. декоративная)<br>Оклейка стен обоями<br>Герметизация оконных проемов<br>Облицовка плиткой
+                                        </div>
+                                        <div class="mb-4">
+                                            <div class="font-s-big uppercase letter-s-0-1 weight-700 mb-2">Полы</div>
+                                            Устройство стяжки<br>Монтаж сухой стяжки KNAUF<br>Самовыравнивающая стяжка<br>Настил ламината<br>Монтаж паркетной доски<br>Облицовка плиткой<br>Гидроизоляция (только с/у)
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-12">
+                                        <div class="mb-4">
+                                            <div class="font-s-big uppercase letter-s-0-1 weight-700 mb-2">Электромонтажные работы</div>
+                                            Полный комплекс работ<br>Монтаж осветительных приборов<br>Монтаж теплого пола
+                                        </div>
+                                        <div class="mb-4">
+                                            <div class="font-s-big uppercase letter-s-0-1 weight-700 mb-2">Сантехнические работы</div>
+                                            Монтаж системы водоснабжения<br>Монтаж системы канализации<br>Установка сантехнических приборов<br>Монтаж радиаторов отопления
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="examplesDescr3" role="tabpanel">
+                                <div class="row">
+                                    <div class="col-lg-4 col-12">
+                                        <div class="mb-4">
+                                            <div class="font-s-big uppercase letter-s-0-1 weight-700 mb-2">Общестроительные работы</div>
+                                            Демонтажные работы<br>Снабжение объекта материалами
+                                        </div>
+                                        <div class="mb-4">
+                                            <div class="font-s-big uppercase letter-s-0-1 weight-700 mb-2">Потолки</div>
+                                            Штукатурка потолка высококачественная<br>Устройство многоуровневого ГКЛ-потолка с криволинейными элементами<br>Устройство многоуровневого ГКЛ-потолка с прямолинейными элементами
+                                        </div>
+                                        <div class="mb-4">
+                                            <div class="font-s-big uppercase letter-s-0-1 weight-700 mb-2">Электромонтажные работы</div>
+                                            Полный комплекс работ<br>Монтаж осветительных приборов<br>Устройство скрытого освещения<br>Монтаж теплого пола
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-12">
+                                        <div class="mb-4">
+                                            <div class="font-s-big uppercase letter-s-0-1 weight-700 mb-2">Полы</div>
+                                            Устройство стяжки<br>Монтаж сухой стяжки KNAUF<br>Самовыравнивающая стяжка<br>Настил ламината (класса «Люкс»)<br>Монтаж паркетной доски (класса «Люкс»)<br>Монтаж инженерной доски<br>Облицовка плиткой<br>Гидроизоляция (вся квартира)
+                                        </div>
+                                        <div class="mb-4">
+                                            <div class="font-s-big uppercase letter-s-0-1 weight-700 mb-2">Сантехнические работы</div>
+                                            Монтаж системы водоснабжения<br>Монтаж системы канализации<br>Монтаж системы отопления<br>Монтаж системы защиты от протечек<br>Установка сантехнических приборов<br>Монтаж радиаторов отопления<br>Установка конвекторов
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-12">
+                                        <div class="mb-4">
+                                            <div class="font-s-big uppercase letter-s-0-1 weight-700 mb-2">Стены</div>
+                                            Штукатурка стен высококачественная<br>Устройство стен из ГКЛ<br>Шпатлевание стен<br>Перепланировка<br>Возведение стен и перегородок<br>Устройство звукоизоляции (частично)<br>Устройство декоративной штукатурки<br>Окраска стен (в т.ч. декоративная)<br>Оклейка стен обоями<br>Герметизация оконных проемов<br>Устройство из ГКЛ криволинейных конструкций<br>Устройство из ГКЛ криволинейных конструкций с нишами<br>Облицовка плиткой (класса «Люкс»)<br>Устройство проемов<br>Возведение стен и перегородок<br>Нанесение венецианской штукатурки 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="shine-button anim-underline mb-4">Заказать</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- End document -->
 
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -40,6 +40,18 @@ function Interface() {
 
         {
             event: 'click',
+            selector: '[name="examples-descr"]',
+            callback: function () {
+                let href = $(this).attr('data-target');
+                $('#examplesDescrTabContent > .tab-pane').removeClass('show');
+                $('#examplesDescrTabContent > .tab-pane').removeClass('active');
+                $(href).tab('show');
+                console.log(href);
+            }
+        },
+
+        {
+            event: 'click',
             selector: '[data-toggle="tab-calc"]',
             callback: function () {
                 let href = $(this).attr('data-target');
