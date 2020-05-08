@@ -14,9 +14,10 @@
 .partner-left-btn {
     position: absolute;
     left: 0;
-    min-width: 45px;
-    min-height: 45px;
-    padding: 12px;
+    min-width: 2.8125rem;
+    min-height: 2.8125rem;
+    max-height: 2.8125rem;
+    padding: 0.75rem;
     border-radius: 100%;
     box-shadow: 0 0 .675rem rgba(0,0,0,.2) !important;
 }
@@ -24,9 +25,10 @@
 .partner-right-btn {
     position: absolute;
     right: 0;
-    min-width: 45px;
-    min-height: 45px;
-    padding: 12px;
+    min-width: 2.8125rem;
+    min-height: 2.8125rem;
+    max-height: 2.8125rem;
+    padding: 0.75rem;
     border-radius: 100%;
     box-shadow: 0 0 .675rem rgba(0,0,0,.2) !important;
 }

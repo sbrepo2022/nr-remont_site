@@ -2,9 +2,9 @@
     display: none;
     z-index: 2000;
     position: absolute;
-    padding: 30px;
-    box-shadow: 0 12px 30px rgba(64,64,64,.19);
-    border-radius: 5px;
+    padding: 1.875rem;
+    box-shadow: 0 0.75rem 1.875rem rgba(64,64,64,.19);
+    border-radius: 0.3125rem;
     background-color: var(--color-white);
     transition: opacity .3s ease;
 }
@@ -15,30 +15,53 @@
     top: 50%;
     transform-origin: center center;
     transform: translateY(-50%);
-    right: -19px;
-    border: 10px solid rgba(255, 255, 255, 0);
-    border-left: 10px solid rgba(255, 255, 255, 1);
+    right: -1.1875rem;
+    border: 0.625rem solid rgba(255, 255, 255, 0);
+    border-left: 0.625rem solid rgba(255, 255, 255, 1);
     width: 1px;
     height: 1px;
 }
 
 .tooltip-dialog > h3 {
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
     font-weight: 700;
     letter-spacing: 2.2px;
-    margin: 0 0 10px 0;
+    margin: 0 0 0.625rem 0;
     text-transform: uppercase;
 }
 
 .tooltip-dialog > p {
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 1rem;
+    line-height: 1.375rem;
     font-weight: 400;
     line-height: 120%;
     margin: 0;
 }
 
 .tooltip-spacer {
-    height: 8px;
+    height: 0.5rem;
+}
+
+@media (max-width: 991.98px) {
+    .tooltip-dialog {
+        padding: 1rem;
+        box-shadow: 0 0.75rem 1.875rem rgba(64,64,64,.19);
+        border-radius: 0.3125rem;
+    }
+
+    .tooltip-dialog > h3 {
+        font-size: 1.25rem;
+        line-height: 1.25rem;
+        margin: 0 0 0.5rem 0;
+    }
+
+    .tooltip-dialog > p {
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+
+    .tooltip-spacer {
+        height: 0.3rem;
+    }
 }

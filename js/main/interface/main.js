@@ -6,7 +6,9 @@ $(() => {
     tooltip_dialog.bindTo('.example-point');
 
     var lazyLoadInstance = new LazyLoad({
-        elements_selector: ".lazy"
+        elements_selector: ".lazy",
+        threshold: 2000,
+        cancel_on_exit: true,
     });
     console.log(lazyLoadInstance);
 

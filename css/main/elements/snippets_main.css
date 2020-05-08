@@ -34,17 +34,25 @@
 
 .example-point {
     position: absolute;
-    width: 30px;
-    height: 30px;
+    width: 1.875rem;
+    height: 1.875rem;
     background: #fceab7;
     border-radius: 50%;
-    box-shadow: inset 0 2px 4px rgba(71,57,20,.5),0 2px 31px rgba(33,33,33,.23);
-    border: 9px solid #fff;
+    box-shadow: inset 0 2px 4px rgba(71,57,20,.5),0 2px 1.9375rem rgba(33,33,33,.23);
+    border: 0.5625rem solid #fff;
     cursor: pointer;
 
     transform-origin: center center;
     transition: all .3s ease;
     animation: pulse 1s infinite;
+}
+
+@media (max-width: 991.98px) {
+    .example-point {
+        width: 1.5rem;
+        height: 1.5rem;
+        border: 0.4rem solid #fff;
+    }
 }
 
 .example-point:hover {

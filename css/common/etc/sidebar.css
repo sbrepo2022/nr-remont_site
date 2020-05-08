@@ -1,8 +1,38 @@
 .sidebar {
     position: fixed;
     top: 0;
-    bottom: 0;
+    height: 100vh;
     display: block;
     width: 285px;
     background-color: var(--color-sidebar-bg);
+    overflow: hidden
+}
+
+.sidebar > ul {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 45px;
+}
+
+.menu-title {
+    font-size: var(--font-size-normal-x1-25);
+    line-height: 120%;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    color: var(--color-white);
+
+    margin-bottom: 25px;
+}
+
+.menu-elem {
+    font-size: 0.75rem;
+    line-height: 120%;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    cursor: default;
+    color: var(--color-white);
+
+    margin-bottom: 25px;
 }

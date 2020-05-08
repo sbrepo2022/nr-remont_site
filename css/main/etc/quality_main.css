@@ -1,11 +1,17 @@
 .remont-example-card {
-    width: 930px;
+    max-width: 930px;
     display: inline-block;
 }
 
 .remont-example-card > div {
     border-radius: 5px;
     box-shadow: 0 20px 40px rgba(33, 33, 33, .21);
+}
+
+@media (max-width: 991.98px) {
+    .remont-example-card > div {
+        box-shadow: none;
+    }
 }
 
 .quality-label {
