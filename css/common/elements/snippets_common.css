@@ -121,7 +121,7 @@
     padding: 0 2.8125rem;
     height: 4.375rem;
     line-height: 4.375rem;
-    border-radius: 0;
+    border-radius: 5px;
     text-shadow: 0 2px 1px rgba(255,255,255,.43);
     box-shadow: 0 1.1875rem 1.375rem rgba(109,89,21,.39),inset 0 0.25rem 0.3125rem rgba(255,255,255,.33),inset 0 0 0 4.375rem rgba(255,225,125,0.0);
     background: linear-gradient(350deg,#f5b812 0,#ffdb5e 100%);
@@ -166,6 +166,7 @@
 
 .accent-plus {
     color: var(--color-accent);
+    font-size: 1.8rem;
 }
 
 .section-title {

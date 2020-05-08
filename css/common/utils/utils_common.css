@@ -82,6 +82,10 @@
     font-size: var(--font-size-normal-x1-5) !important;
 }
 
+.font-s-normal-x1-7 {
+    font-size: var(--font-size-normal-x1-7) !important;
+}
+
 .font-s-normal-x2 {
     font-size: var(--font-size-normal-x2) !important;
 }
