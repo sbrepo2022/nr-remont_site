@@ -60,7 +60,22 @@ function Interface() {
                 $(href).tab('show');
                 console.log(href);
             }
-        }
+        },
+
+        {
+            event: 'submit',
+            selector: '.confidence-validate',
+            callback: function () {
+                if ($(this).find('.confidence-checkbox > input[type="checkbox"]').prop('checked')) {
+                    $($(this).attr('alert-select')).removeClass('show');
+                    return true;
+                }
+                else {
+                    $($(this).attr('alert-select')).addClass('show');
+                    return false;
+                }
+            }
+        },
     ];
 
     /* метод проходится по массиву bindings и регистрирует обработчики */

@@ -38,6 +38,14 @@
 	background-repeat: no-repeat;
 }
 
+.icon-1-25 {
+    display: inline-block;
+	min-width: 1.25rem;
+	min-height: 1.25rem;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
 .icon-normal {
     display: inline-block;
 	min-width: 1.5rem;

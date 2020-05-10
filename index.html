@@ -14,6 +14,12 @@
         <!-- selectric -->
         <link rel="stylesheet" href="selectric/css/selectric.css">
 
+        <!-- fancybox -->
+        <link rel="stylesheet" href="fancybox/css/jquery.fancybox.min.css">
+
+        <!-- colorbox -->
+        <link rel="stylesheet" href="colorbox/css/colorbox.css">
+
         <!-- Optional CSS -->
 
         <!-- Common CSS -->
@@ -30,6 +36,7 @@
         <link rel="stylesheet" href="css/common/elements/animations_common.css">
         <link rel="stylesheet" href="css/common/utils/resources/icons_common.css">
         <link rel="stylesheet" href="css/common/utils/utils_common.css">
+        <link rel="stylesheet" href="css/common/utils/bootstrap_overload.css">
 
         <link rel="stylesheet" href="css/main/etc/header_main.css">
         <link rel="stylesheet" href="css/main/etc/footer_main.css">
@@ -47,6 +54,7 @@
         <link rel="stylesheet" href="css/main/etc/map_main.css">
         <link rel="stylesheet" href="css/main/elements/snippets_main.css">
         <link rel="stylesheet" href="css/main/elements/animations_main.css">
+        <link rel="stylesheet" href="css/main/elements/dialogs_main.css">
         <link rel="stylesheet" href="css/main/utils/resources/icons_main.css">
 
         <title>nr-remont</title>
@@ -76,21 +84,21 @@
                     <div class="container container-930">
                         <div class="d-flex logo-block">
                             <div class="mr-auto">
-                                <div class="logo font-s-normal-x1-7 line-h-120">NR-REMONT</div>
-                                <div class="logo-descr font-s-big-x1-5 line-h-120">Ремонт квартир<br>в Москве и МО</div>
+                                <div class="logo font-s-big-x1-5 line-h-120">NR-REMONT</div>
+                                <div class="logo-descr font-s-big line-h-120">Ремонт квартир<br>в Москве и МО</div>
                             </div>
-                            <div class="text-right">
-                                <a class="colored-link anim-underline font-s-normal-x1-7 line-h-120" href="#">8 (495) 188-85-87</a>
-                                <div class="font-s-normal-x1-25 line-h-120">с 9:00 до 22:00<br>ежедневно</div>
-                                <button class="flick-button anim-underline mt-1">ЗАКАЗАТЬ ЗВОНОК</button>
+                            <div class="text-right pt-1">
+                                <a class="colored-link anim-underline font-s-normal-x1-5 weight-700 line-h-120" href="#">8 (495) 188-85-87</a>
+                                <div class="font-s-normal line-h-120">с 9:00 до 22:00<br>ежедневно</div>
+                                <button class="flick-button anim-underline mt-1" data-toggle="modal" data-target="#requestCallModal">ЗАКАЗАТЬ ЗВОНОК</button>
                             </div>
                         </div>
-                        <div class="main-title-overlay px-2 text-center pb-2">
+                        <div class="main-title-overlay px-2 text-center pb-2 mr-3 mb-4">
                             <div class="main-title">Ремонт</div>
                             <h1 class="mb-4">под ключ по международным стандартам</h1>
                             <button class="shine-button anim-underline mb-4">Узнать срок и стоимость</button>
                             <p class="weight-600 text-center font-s-normal-x1-25">
-                                Ответьте на 5 вопросов и узнайте примерную<br>стоимость и сроки ремонта.
+                                Ответьте на 5 вопросов и узнайте примерную<br>стоимость и сроки вашего ремонта.
                             </p>
                         </div>
                         <div class="row weight-600 font-s-big pt-5">
@@ -100,7 +108,7 @@
                             </div>
                             <div class="col-md-3 col-6 d-flex mb-5">
                                 <span class="accent-plus mr-2">+</span>
-                                <span>Гарантия на работу 3 года</span>
+                                <span>Гарантия<br>на работу 3 года</span>
                             </div>
                             <div class="col-md-3 col-6 d-flex mb-5">
                                 <span class="accent-plus mr-2">+</span>
@@ -120,7 +128,7 @@
 
                 <section id="quality" class="section border-bottom">
                     <div class="container container-930 pt-5">
-                        <h2 class="section-title d-inline-block p-2">
+                        <h2 class="section-title d-inline-block">
                             <span>
                                  <strong>Качественный ремонт</strong><br>
                                  по доступной цене
@@ -138,7 +146,7 @@
                                                 <span class="example-point" style="left: 13.27%; top: 5.73%;" data-title="Потолки" data-text="Штукатурка потолка<br>высококачественная<div class='tooltip-spacer'></div>Шпатлевание потолка<div class='tooltip-spacer'></div>Окраска потолка<div class='tooltip-spacer'></div>Монтаж реечного потолка<div class='tooltip-spacer'></div>Монтаж натяжного потолка"></span>
                                                 <span class="example-point" style="left: 32.63%; top: 7.64%;" data-title="Электромонтажные<br>работы" data-text="Полный комплекс работ<div class='tooltip-spacer'></div>Монтаж осветительных<br>приборов<div class='tooltip-spacer'></div>Монтаж теплого пола"></span>
                                                 <span class="example-point" style="left: 75.64%; top: 26.76%;" data-title="Стены" data-text="Штукатурка стен<br>высококачественная<div class='tooltip-spacer'></div>Возведение стен и<br>перегородок<div class='tooltip-spacer'></div>Окраска стен<div class='tooltip-spacer'></div>Оклейка стен обоями<div class='tooltip-spacer'></div>Герметизация оконных<br>проемов<div class='tooltip-spacer'></div>Облицовка плиткой"></span>
-                                                <span class="example-point" style="left: 48.76%; top: 63.09%;" data-title="Общестроительные<br>работы" data-text="Демонтажные работы<div class='tooltip-spacer'></div>Снабжение объекта<br>материалами"></span>
+                                                <span class="example-point" style="left: 44.76%; top: 53.09%;" data-title="Общестроительные<br>работы" data-text="Демонтажные работы<div class='tooltip-spacer'></div>Снабжение объекта<br>материалами"></span>
                                                 <span class="example-point" style="left: 8.97%; top: 80.30%;" data-title="Полы" data-text="Устройство стяжки<div class='tooltip-spacer'></div>Монтаж сухой стяжки KNAUF<div class='tooltip-spacer'></div>Самовыравнивающаяся стяжка<div class='tooltip-spacer'></div>Настил ламината<div class='tooltip-spacer'></div>Облицовка плиткой<div class='tooltip-spacer'></div>Гидроизоляция (только с/у)"></span>
                                                 <span class="example-point" style="left: 93.62%; top: 80.30%;" data-title="Сантехнические<br>работы" data-text="Монтаж системы водоснабжения<div class='tooltip-spacer'></div>Монтаж системы канализации<div class='tooltip-spacer'></div>Установка сантехнических<br>приборов<div class='tooltip-spacer'></div>Монтаж радиаторов отопления"></span>
                                             </div>
@@ -202,13 +210,13 @@
 
                 <section id="benefits" class="section border-bottom">
                     <div class="container container-930 pt-5">
-                        <h2 class="section-title d-inline-block p-2 mb-4">
+                        <h2 class="section-title d-inline-block mb-4">
                             <span>
                                  <strong>Ремонт с нами —</strong><br>
                                  это просто и надежно
                              </span>
                         </h2>
-                        <div class="row align-items-stretch">
+                        <div class="row align-items-stretch mt-3">
                             <div class="col-lg-8 col-12 mt-5">
                                 <div class="row">
                                     <div class="col-lg-6 col-12 benefit-fact d-flex mb-5">
@@ -510,15 +518,15 @@
                 </section>
 
                 <section id="workers" class="section border-bottom">
-                    <div class="container container-930 pt-5">
-                        <h2 class="section-title d-inline-block p-2 mb-4">
+                    <div class="container container-930 pt-5 pb-lg-5 pb-0 mb-lg-4 mb-0">
+                        <h2 class="section-title d-inline-block mb-4 mt-4">
                             <span>
                                  <strong>Сотрудники,</strong>
                                  которым<br>можно доверять
                              </span>
                         </h2>
                         <div class="row align-items-stretch">
-                            <div class="col-lg-8 col-12 mt-5 workers-info">
+                            <div class="col-lg-8 col-12 mt-4 workers-info">
                                 <div class="card-light-border workers-light-card">
                                     Все наши мастера, официально трудоустроены. И регулярно проходят обучения в представительствах ведущих строительных брендов таких как "KNAUF", "REHAU", "TESSER".
                                 </div>
@@ -540,11 +548,11 @@
                             <div class="col-lg-4 col-12">
                                 <div class="row card-secondary-info p-3 pt-5 pb-0">
                                     <div class="col-12 benefit-fact d-flex mb-5">
-                                        <span class="accent-plus font-s-big weight-600 mr-4">+</span>
+                                        <span class="accent-plus weight-600 mr-4">+</span>
                                         <div><h3>Прорабы с высшим образованием</h3>У нас работают прорабы, инженеры и сметчики только с высшим строительным образованием.</div>
                                     </div>
                                     <div class="col-12 benefit-fact d-flex mb-5">
-                                        <span class="accent-plus font-s-big weight-600 mr-4">+</span>
+                                        <span class="accent-plus weight-600 mr-4">+</span>
                                         <div><h3>Аттестация каждые полгода</h3>Каждые полгода все сотрудники проходят подготовку и аттестацию в учебном центре. Там они обучаются новым технологиям, которые улучшают качество нашего ремонта и сокращают сроки.</div>
                                     </div>
                                 </div>
@@ -559,45 +567,45 @@
                             <h2>Дизайн-проект<br>интерьера — бесплатно</h2>
                             <h4>Компания "Новострой Ремонт" дарит подарок нашим клиентам,<br>заключившим договор на ремонт.<br>Дизайн-проект интерьера бесплатно!</h4>
                         </div>
-                        <button class="shine-button anim-underline mt-2">Узнать подробнее</button>
+                        <button class="shine-button anim-underline mt-2" data-toggle="modal" data-target="#learnMoreModal">Узнать подробнее</button>
                     </div>
                 </section>
 
                 <section id="work" class="section border-bottom">
-                    <div class="container container-930 position-relative pt-5">
-                        <h2 class="section-title d-inline-block p-2 mb-4">
+                    <div class="container container-930 position-relative pt-5 mb-5">
+                        <h2 class="section-title d-inline-block mb-4">
                             <span>
                                  <strong>Наш подход</strong> к работе
                              </span>
                         </h2>
                         <img class="img-work lazy" data-src="resources/images/static/main_page/work.jpg">
                         <div class="row">
-                            <div class="col-lg-6 col-12">
+                            <div class="col-lg-6 col-12 mb-2">
                                 <div class="image-contain work-count-block lazy" data-bg="resources/images/static/main_page/bac1.png">
                                     <h3>Работаем без предоплаты. Расчет происходит поэтапно.</h3>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-12">
+                            <div class="col-lg-6 col-12 mb-2">
                                 <div class="image-contain work-count-block lazy" data-bg="resources/images/static/main_page/bac2.png">
                                     <h3>Наша смета не "растет" во время ремонта.</h3>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-12">
+                            <div class="col-lg-6 col-12 mb-2">
                                 <div class="image-contain work-count-block lazy" data-bg="resources/images/static/main_page/bac3.png">
                                     <h3>Основные работы мы выполняем механизированным способом.</h3>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-12">
+                            <div class="col-lg-6 col-12 mb-2">
                                 <div class="image-contain work-count-block lazy" data-bg="resources/images/static/main_page/bac4.png">
                                     <h3>Готовы показать объект на любом этапе отделочных работ.</h3>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-12">
+                            <div class="col-lg-6 col-12 mb-2">
                                 <div class="image-contain work-count-block lazy" data-bg="resources/images/static/main_page/bac5.png">
                                     <h3>У нас своя студия дизайна www.nr-design.art, и мы с удовольствием подарим Вам дизайн-проект.</h3>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-12">
+                            <div class="col-lg-6 col-12 mb-2">
                                 <div class="image-contain work-count-block lazy" data-bg="resources/images/static/main_page/bac6.png">
                                     <h3>В нашей компании есть отдел клининга, поэтому после завершения работ квартира чистая.</h3>
                                 </div>
@@ -606,9 +614,9 @@
                     </div>
                 </section>
 
-                <section class="section border-bottom">
+                <section class="section border-bottom pb-5">
                     <div class="container container-930 position-relative pt-5">
-                        <h2 class="section-title d-inline-block p-2 mb-4">
+                        <h2 class="section-title d-inline-block mb-4 mt-5">
                             <span>
                                  <strong>Мы создали</strong> стандарт рынка
                              </span>
@@ -640,7 +648,7 @@
                             <h2>Ремонт сейчас —<br>деньги потом!</h2>
                             <h4>Действует беспроцентная рассрочка до 12 месяцев,<br>узнайте подробнее у нашего менеджера прямо сейчас.</h4>
                         </div>
-                        <button class="shine-button anim-underline mt-2">Узнать подробнее</button>
+                        <button class="shine-button anim-underline mt-2" data-toggle="modal" data-target="#learnMoreModal">Узнать подробнее</button>
                     </div>
                 </section>
 
@@ -653,7 +661,7 @@
                             <div id="calcTabs" class="tab-content">
                                 <div class="tab-pane fade show active" id="calcStep1">
                                     <div class="font-s-normal-x1-25 color-black mb-2">Шаг 1 из 5</div>
-                                    <div class="busy-line bl-20 mb-5"></div>
+                                    <div class="busy-line bl-20 mb-4"></div>
                                     <div class="row">
                                         <div class="col-3 d-lg-block d-none">
                                             <img class="lazy" data-src="resources/images/static/main_page/mans.png" style="width: 100%; height: auto;">
@@ -666,7 +674,7 @@
                                                     <label class="col-lg-3 col-6 mb-4">
                                                         <input type="radio" name="build" value="Новостройка" checked>
                                                         <span class="btn-calc-choose">
-                                                            <div class="pl-3 pr-3 pb-3 mb-3">
+                                                            <div class="px-4 pb-3 mb-3">
                                                                 <div class="image-contain lazy" style="width: 100%; height: 8rem;" data-bg="resources/images/static/main_page/remont_calc/hook.png"></div>
                                                             </div>
                                                             Новостройка
@@ -675,7 +683,7 @@
                                                     <label class="col-lg-3 col-6 mb-4">
                                                         <input type="radio" name="build" value="Вторичка">
                                                         <span class="btn-calc-choose">
-                                                            <div class="pl-3 pr-3 pb-3 mb-3">
+                                                            <div class="px-4 pb-3 mb-3">
                                                                 <div class="image-contain lazy" style="width: 100%; height: 8rem;" data-bg="resources/images/static/main_page/remont_calc/building.png"></div>
                                                             </div>
                                                             Вторичка
@@ -684,7 +692,7 @@
                                                     <label class="col-lg-3 col-6 mb-4">
                                                         <input type="radio" name="build" value="Комната в квартире">
                                                         <span class="btn-calc-choose">
-                                                            <div class="pl-3 pr-3 pb-3 mb-3">
+                                                            <div class="px-4 pb-3 mb-3">
                                                                 <div class="image-contain lazy" style="width: 100%; height: 8rem;" data-bg="resources/images/static/main_page/remont_calc/room.png"></div>
                                                             </div>
                                                             Комната в квартире
@@ -693,7 +701,7 @@
                                                     <label class="col-lg-3 col-6 mb-4">
                                                         <input type="radio" name="build" value="Офисное помещение">
                                                         <span class="btn-calc-choose">
-                                                            <div class="pl-3 pr-3 pb-3 mb-3">
+                                                            <div class="px-4 pb-3 mb-3">
                                                                 <div class="image-contain lazy" style="width: 100%; height: 8rem;" data-bg="resources/images/static/main_page/remont_calc/cottage.png"></div>
                                                             </div>
                                                             Офисное помещение
@@ -709,7 +717,7 @@
                                 </div>
                                 <div class="tab-pane fade" id="calcStep2">
                                     <div class="font-s-normal-x1-25 color-black mb-2">Шаг 2 из 5</div>
-                                    <div class="busy-line bl-40 mb-5"></div>
+                                    <div class="busy-line bl-40 mb-4"></div>
                                     <div class="row">
                                         <div class="col-3 d-lg-block d-none">
                                             <img class="lazy" data-src="resources/images/static/main_page/mans.png" style="width: 100%; height: auto;">
@@ -722,7 +730,7 @@
                                                     <label class="col-lg-4 col-6 mb-4">
                                                         <input type="radio" name="src" value="С вашим материалом" checked>
                                                         <span class="btn-calc-choose">
-                                                            <div class="pl-3 pr-3 pb-3 mb-3">
+                                                            <div class="px-4 pb-3 mb-3">
                                                                 <div class="image-contain lazy" style="width: 100%; height: 8rem;" data-bg="resources/images/static/main_page/remont_calc/checkout.png"></div>
                                                             </div>
                                                             С вашим материалом
@@ -731,7 +739,7 @@
                                                     <label class="col-lg-4 col-6 mb-4">
                                                         <input type="radio" name="src" value="С нашими черновыми материалами">
                                                         <span class="btn-calc-choose">
-                                                            <div class="pl-3 pr-3 pb-3 mb-3">
+                                                            <div class="px-4 pb-3 mb-3">
                                                                 <div class="image-contain lazy" style="width: 100%; height: 8rem;" data-bg="resources/images/static/main_page/remont_calc/brick-wall.png"></div>
                                                             </div>
                                                             С нашими черновыми материалами
@@ -740,7 +748,7 @@
                                                     <label class="col-lg-4 col-6 mb-4">
                                                         <input type="radio" name="src" value="С нашими черновыми и лицевыми материалами">
                                                         <span class="btn-calc-choose">
-                                                            <div class="pl-3 pr-3 pb-3 mb-3">
+                                                            <div class="px-4 pb-3 mb-3">
                                                                 <div class="image-contain lazy" style="width: 100%; height: 8rem;" data-bg="resources/images/static/main_page/remont_calc/painting-roller.png"></div>
                                                             </div>
                                                             С нашими черновыми и лицевыми материалами
@@ -757,7 +765,7 @@
                                 </div>
                                 <div class="tab-pane fade" id="calcStep3">
                                     <div class="font-s-normal-x1-25 color-black mb-2">Шаг 3 из 5</div>
-                                    <div class="busy-line bl-60 mb-5"></div>
+                                    <div class="busy-line bl-60 mb-4"></div>
                                     <div class="row">
                                         <div class="col-3 d-lg-block d-none">
                                             <img class="lazy" data-src="resources/images/static/main_page/mans.png" style="width: 100%; height: auto;">
@@ -814,7 +822,7 @@
                                 </div>
                                 <div class="tab-pane fade" id="calcStep4">
                                     <div class="font-s-normal-x1-25 color-black mb-2">Шаг 4 из 5</div>
-                                    <div class="busy-line bl-80 mb-5"></div>
+                                    <div class="busy-line bl-80 mb-4"></div>
                                     <div class="row">
                                         <div class="col-3 d-lg-block d-none">
                                             <img src="resources/images/static/main_page/mans.png" style="width: 100%; height: auto;">
@@ -827,7 +835,7 @@
                                                     <label class="col-lg-3 col-6 mb-4">
                                                         <input type="radio" name="rem_type" value="Косметический ремонт" checked>
                                                         <span class="btn-calc-choose">
-                                                            <div class="pl-3 pr-3 pb-3 mb-3">
+                                                            <div class="px-4 pb-3 mb-3">
                                                                 <div class="image-contain lazy" style="width: 100%; height: 8rem;" data-bg="resources/images/static/main_page/remont_calc/paint-roller2.png"></div>
                                                             </div>
                                                             Косметический ремонт
@@ -836,7 +844,7 @@
                                                     <label class="col-lg-3 col-6 mb-4">
                                                         <input type="radio" name="rem_type" value="Капитальный ремонт">
                                                         <span class="btn-calc-choose">
-                                                            <div class="pl-3 pr-3 pb-3 mb-3">
+                                                            <div class="px-4 pb-3 mb-3">
                                                                 <div class="image-contain lazy" style="width: 100%; height: 8rem;" data-bg="resources/images/static/main_page/remont_calc/driller.png"></div>
                                                             </div>
                                                             Капитальный ремонт
@@ -845,7 +853,7 @@
                                                     <label class="col-lg-3 col-6 mb-4">
                                                         <input type="radio" name="rem_type" value="Ремонт в новостройке">
                                                         <span class="btn-calc-choose">
-                                                            <div class="pl-3 pr-3 pb-3 mb-3">
+                                                            <div class="px-4 pb-3 mb-3">
                                                                 <div class="image-contain lazy" style="width: 100%; height: 8rem;" data-bg="resources/images/static/main_page/remont_calc/engineer.png"></div>
                                                             </div>
                                                             Ремонт в новостройке
@@ -854,7 +862,7 @@
                                                     <label class="col-lg-3 col-6 mb-4">
                                                         <input type="radio" name="rem_type" value="Дизайнерский ремонт">
                                                         <span class="btn-calc-choose">
-                                                            <div class="pl-3 pr-3 pb-3 mb-3">
+                                                            <div class="px-4 pb-3 mb-3">
                                                                 <div class="image-contain lazy" style="width: 100%; height: 8rem;" data-bg="resources/images/static/main_page/remont_calc/engineer.png"></div>
                                                             </div>
                                                             Дизайнерский ремонт
@@ -871,7 +879,7 @@
                                 </div>
                                 <div class="tab-pane fade" id="calcStep5">
                                     <div class="font-s-normal-x1-25 color-black mb-2">Шаг 5 из 5</div>
-                                    <div class="busy-line bl-100 mb-5"></div>
+                                    <div class="busy-line bl-100 mb-4"></div>
                                     <div class="row align-items-center">
                                         <div class="col-lg-6 col-12 mb-5">
                                             <div class="thanks-title">Спасибо за ответы!</div>
@@ -902,16 +910,23 @@
                 <section id="examples" class="section position-relative">
                     <img class="img-cases-bottom lazy" data-src="resources/images/static/main_page/cases_bottom.jpg">
                     <div class="container container-930 pt-5">
-                        <h2 class="section-title d-inline-block p-2 mb-5">
-                            <span>
-                                 <strong>Проекты</strong><br>
-                                 Реализованные нами
-                             </span>
-                        </h2>
-                        <div class="my-4">
-                            <label><input type="radio" class="examples-tab" name="realised" tab-index="0" checked><span class="primary-outline-button mr-2">До 60 м²</span></label>
-                            <label><input type="radio" class="examples-tab" name="realised" tab-index="1"><span class="primary-outline-button mr-2">Более 60 м²</span></label>
-                            <label><input type="radio" class="examples-tab" name="realised" tab-index="2"><span class="primary-outline-button">Ванные комнаты</span></label>
+                        <div class="d-flex">
+                            <h2 class="section-title d-inline-block mb-5 mr-auto">
+                                <span>
+                                     <strong>Проекты</strong><br>
+                                     реализованные нами
+                                 </span>
+                            </h2>
+                            <div class="d-lg-block d-none">
+                                <label><input type="radio" class="examples-tab" name="realised" tab-index="0" checked><span class="primary-outline-button">До 60 м²</span></label><br>
+                                <label><input type="radio" class="examples-tab" name="realised" tab-index="1"><span class="primary-outline-button">Более 60 м²</span></label><br>
+                                <label><input type="radio" class="examples-tab" name="realised" tab-index="2"><span class="primary-outline-button">Ванные комнаты</span></label><br>
+                            </div>
+                        </div>
+                        <div class="my-4 d-lg-none d-block">
+                            <label><input type="radio" class="examples-tab" name="realised-md" tab-index="0" checked><span class="primary-outline-button mr-2">До 60 м²</span></label>
+                            <label><input type="radio" class="examples-tab" name="realised-md" tab-index="1"><span class="primary-outline-button mr-2">Более 60 м²</span></label>
+                            <label><input type="radio" class="examples-tab" name="realised-md" tab-index="2"><span class="primary-outline-button">Ванные комнаты</span></label>
                         </div>
                         <div id="realisedSwiper" class="swiper-container">
                             <div class="swiper-wrapper">
@@ -919,21 +934,21 @@
                                     <div class="realised-grid-2">
                                         <div class="item-1 image-cover grid-elem lazy" data-bg="resources/images/static/main_page/realised_images/1d.jpg">
                                             <div class="realised-image-overlay">
-                                                <button class="primary-outlined-round center-div">Смотреть подробнее</button>
+                                                <button class="primary-outlined-round center-div" data-toggle="modal" data-target="#imagesModal" data-index="0">Смотреть подробнее</button>
                                             </div>
-                                            <div class="realised-descr">2-к квартира, 68 м²</div>
+                                            <div class="realised-descr">1-к квартира, 58 м²</div>
                                         </div>
                                         <div class="item-2 image-cover grid-elem lazy" data-bg="resources/images/static/main_page/realised_images/2d.jpg">
                                             <div class="realised-image-overlay">
-                                                <button class="primary-outlined-round center-div">Смотреть подробнее</button>
+                                                <button class="primary-outlined-round center-div" data-toggle="modal" data-target="#imagesModal" data-index="1">Смотреть подробнее</button>
                                             </div>
-                                            <div class="realised-descr">2-к квартира, 68 м²</div>
+                                            <div class="realised-descr">2-к квартира, 43 м²</div>
                                         </div>
                                         <div class="item-3 image-cover grid-elem lazy" data-bg="resources/images/static/main_page/realised_images/3d.jpg">
                                             <div class="realised-image-overlay">
-                                                <button class="primary-outlined-round center-div">Смотреть подробнее</button>
+                                                <button class="primary-outlined-round center-div" data-toggle="modal" data-target="#imagesModal" data-index="2">Смотреть подробнее</button>
                                             </div>
-                                            <div class="realised-descr">2-к квартира, 68 м²</div>
+                                            <div class="realised-descr">2-к квартира, 56 м²</div>
                                         </div>
                                     </div>
                                 </div>
@@ -941,51 +956,51 @@
                                     <div class="realised-grid">
                                         <div class="item-1 image-cover grid-elem lazy" data-bg="resources/images/static/main_page/realised_images/131.jpg">
                                             <div class="realised-image-overlay">
-                                                <button class="primary-outlined-round center-div">Смотреть подробнее</button>
+                                                <button class="primary-outlined-round center-div" data-toggle="modal" data-target="#imagesModal" data-index="3">Смотреть подробнее</button>
                                             </div>
                                             <div class="realised-descr">2-к квартира, 68 м²</div>
                                         </div>
                                         <div class="item-2 image-cover grid-elem lazy" data-bg="resources/images/static/main_page/realised_images/211.jpg">
                                             <div class="realised-image-overlay">
-                                                <button class="primary-outlined-round center-div">Смотреть подробнее</button>
+                                                <button class="primary-outlined-round center-div" data-toggle="modal" data-target="#imagesModal" data-index="4">Смотреть подробнее</button>
                                             </div>
-                                            <div class="realised-descr">2-к квартира, 68 м²</div>
+                                            <div class="realised-descr">1-к квартира, 65 м²</div>
                                         </div>
                                         <div class="item-3 image-cover grid-elem lazy" data-bg="resources/images/static/main_page/realised_images/251.jpg">
                                             <div class="realised-image-overlay">
-                                                <button class="primary-outlined-round center-div">Смотреть подробнее</button>
+                                                <button class="primary-outlined-round center-div" data-toggle="modal" data-target="#imagesModal" data-index="5">Смотреть подробнее</button>
                                             </div>
-                                            <div class="realised-descr">2-к квартира, 68 м²</div>
+                                            <div class="realised-descr">1-к квартира, 65 м²</div>
                                         </div>
                                         <div class="item-4 image-cover grid-elem lazy" data-bg="resources/images/static/main_page/realised_images/171.jpg">
                                             <div class="realised-image-overlay">
-                                                <button class="primary-outlined-round center-div">Смотреть подробнее</button>
+                                                <button class="primary-outlined-round center-div" data-toggle="modal" data-target="#imagesModal" data-index="6">Смотреть подробнее</button>
                                             </div>
                                             <div class="realised-descr">2-к квартира, 68 м²</div>
                                         </div>
                                         <div class="item-5 image-cover grid-elem lazy" data-bg="resources/images/static/main_page/realised_images/291.jpg">
                                             <div class="realised-image-overlay">
-                                                <button class="primary-outlined-round center-div">Смотреть подробнее</button>
+                                                <button class="primary-outlined-round center-div" data-toggle="modal" data-target="#imagesModal" data-index="7">Смотреть подробнее</button>
                                             </div>
                                             <div class="realised-descr">2-к квартира, 68 м²</div>
                                         </div>
                                         <div class="item-6 image-cover grid-elem lazy" data-bg="resources/images/static/main_page/realised_images/331.jpg">
                                             <div class="realised-image-overlay">
-                                                <button class="primary-outlined-round center-div">Смотреть подробнее</button>
+                                                <button class="primary-outlined-round center-div" data-toggle="modal" data-target="#imagesModal" data-index="8">Смотреть подробнее</button>
                                             </div>
-                                            <div class="realised-descr">2-к квартира, 68 м²</div>
+                                            <div class="realised-descr">3-к квартира, 105 м²</div>
                                         </div>
                                         <div class="item-7 image-cover grid-elem lazy" data-bg="resources/images/static/main_page/realised_images/371.jpg">
                                             <div class="realised-image-overlay">
-                                                <button class="primary-outlined-round center-div">Смотреть подробнее</button>
+                                                <button class="primary-outlined-round center-div" data-toggle="modal" data-target="#imagesModal" data-index="9">Смотреть подробнее</button>
                                             </div>
-                                            <div class="realised-descr">2-к квартира, 68 м²</div>
+                                            <div class="realised-descr">3-к квартира, 62 м²</div>
                                         </div>
                                         <div class="item-8 image-cover grid-elem lazy" data-bg="resources/images/static/main_page/realised_images/411.jpg">
                                             <div class="realised-image-overlay">
-                                                <button class="primary-outlined-round center-div">Смотреть подробнее</button>
+                                                <button class="primary-outlined-round center-div" data-toggle="modal" data-target="#imagesModal" data-index="10">Смотреть подробнее</button>
                                             </div>
-                                            <div class="realised-descr">2-к квартира, 68 м²</div>
+                                            <div class="realised-descr">3-к квартира, 73 м²</div>
                                         </div>
                                     </div>
                                 </div>
@@ -993,21 +1008,21 @@
                                     <div class="realised-grid-2">
                                         <div class="item-1 image-cover grid-elem lazy" data-bg="resources/images/static/main_page/realised_images/65v.jpg">
                                             <div class="realised-image-overlay">
-                                                <button class="primary-outlined-round center-div">Смотреть подробнее</button>
+                                                <button class="primary-outlined-round center-div" data-toggle="modal" data-target="#imagesModal" data-index="11">Смотреть подробнее</button>
                                             </div>
-                                            <div class="realised-descr">2-к квартира, 68 м²</div>
+                                            <div class="realised-descr"></div>
                                         </div>
                                         <div class="item-2 image-cover grid-elem lazy" data-bg="resources/images/static/main_page/realised_images/69v.jpg">
                                             <div class="realised-image-overlay">
-                                                <button class="primary-outlined-round center-div">Смотреть подробнее</button>
+                                                <button class="primary-outlined-round center-div" data-toggle="modal" data-target="#imagesModal" data-index="12">Смотреть подробнее</button>
                                             </div>
-                                            <div class="realised-descr">2-к квартира, 68 м²</div>
+                                            <div class="realised-descr"></div>
                                         </div>
                                         <div class="item-3 image-cover grid-elem lazy" data-bg="resources/images/static/main_page/realised_images/73v.jpg">
                                             <div class="realised-image-overlay">
-                                                <button class="primary-outlined-round center-div">Смотреть подробнее</button>
+                                                <button class="primary-outlined-round center-div" data-toggle="modal" data-target="#imagesModal" data-index="13">Смотреть подробнее</button>
                                             </div>
-                                            <div class="realised-descr">2-к квартира, 68 м²</div>
+                                            <div class="realised-descr"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -1019,16 +1034,23 @@
                 <section class="section position-relative">
                     <img class="img-cases-bottom lazy" data-src="resources/images/static/main_page/cases_bottom.jpg">
                     <div class="container container-930 pt-5">
-                        <h2 class="section-title d-inline-block p-2 mb-5">
-                            <span>
-                                 <strong>Дизайн проекты</strong><br>
-                                 студии NR-Design
-                            </span>
-                        </h2>
-                        <div class="my-4">
-                            <label><input type="radio" class="examples-tab" name="design-projects" tab-index="0" checked><span class="primary-outline-button mr-2">Минимализм</span></label>
-                            <label><input type="radio" class="examples-tab" name="design-projects" tab-index="1"><span class="primary-outline-button mr-2">Современный</span></label>
-                            <label><input type="radio" class="examples-tab" name="design-projects" tab-index="2"><span class="primary-outline-button">Арт деко</span></label>
+                        <div class="d-flex">
+                            <h2 class="section-title d-inline-block mb-5 mr-auto">
+                                <span>
+                                     <strong>Дизайн проекты</strong><br>
+                                     студии NR-Design
+                                </span>
+                            </h2>
+                            <div class="d-lg-block d-none">
+                                <label><input type="radio" class="examples-tab" name="design-projects" tab-index="0" checked><span class="primary-outline-button">Минимализм</span></label><br>
+                                <label><input type="radio" class="examples-tab" name="design-projects" tab-index="1"><span class="primary-outline-button">Современный</span></label><br>
+                                <label><input type="radio" class="examples-tab" name="design-projects" tab-index="2"><span class="primary-outline-button">Арт деко</span></label><br>
+                            </div>
+                        </div>
+                        <div class="d-lg-none d-block my-4">
+                            <label><input type="radio" class="examples-tab" name="design-projects-md" tab-index="0" checked><span class="primary-outline-button mr-2">Минимализм</span></label>
+                            <label><input type="radio" class="examples-tab" name="design-projects-md" tab-index="1"><span class="primary-outline-button mr-2">Современный</span></label>
+                            <label><input type="radio" class="examples-tab" name="design-projects-md" tab-index="2"><span class="primary-outline-button">Арт деко</span></label>
                         </div>
                         <div id="designProjectsSwiper" class="swiper-container">
                             <div class="swiper-wrapper">
@@ -1036,19 +1058,19 @@
                                     <div class="realised-grid-2">
                                         <div class="item-1 image-cover grid-elem lazy" data-bg="resources/images/static/main_page/design_projects/mini1s.jpg">
                                             <div class="realised-image-overlay">
-                                                <button class="primary-outlined-round center-div">Смотреть подробнее</button>
+                                                <button class="primary-outlined-round center-div" data-toggle="modal" data-target="#imagesModal" data-index="14">Смотреть подробнее</button>
                                             </div>
                                             <div class="realised-descr"></div>
                                         </div>
                                         <div class="item-2 image-cover grid-elem lazy" data-bg="resources/images/static/main_page/design_projects/mini5s.jpg">
                                             <div class="realised-image-overlay">
-                                                <button class="primary-outlined-round center-div">Смотреть подробнее</button>
+                                                <button class="primary-outlined-round center-div" data-toggle="modal" data-target="#imagesModal" data-index="15">Смотреть подробнее</button>
                                             </div>
                                             <div class="realised-descr"></div>
                                         </div>
                                         <div class="item-3 image-cover grid-elem lazy" data-bg="resources/images/static/main_page/design_projects/mini8s.jpg">
                                             <div class="realised-image-overlay">
-                                                <button class="primary-outlined-round center-div">Смотреть подробнее</button>
+                                                <button class="primary-outlined-round center-div" data-toggle="modal" data-target="#imagesModal" data-index="16">Смотреть подробнее</button>
                                             </div>
                                             <div class="realised-descr"></div>
                                         </div>
@@ -1058,19 +1080,19 @@
                                     <div class="realised-grid-2">
                                         <div class="item-1 image-cover grid-elem lazy" data-bg="resources/images/static/main_page/design_projects/new1s.jpg">
                                             <div class="realised-image-overlay">
-                                                <button class="primary-outlined-round center-div">Смотреть подробнее</button>
+                                                <button class="primary-outlined-round center-div" data-toggle="modal" data-target="#imagesModal" data-index="17">Смотреть подробнее</button>
                                             </div>
                                             <div class="realised-descr"></div>
                                         </div>
                                         <div class="item-2 image-cover grid-elem lazy" data-bg="resources/images/static/main_page/design_projects/new4s.jpg">
                                             <div class="realised-image-overlay">
-                                                <button class="primary-outlined-round center-div">Смотреть подробнее</button>
+                                                <button class="primary-outlined-round center-div" data-toggle="modal" data-target="#imagesModal" data-index="18">Смотреть подробнее</button>
                                             </div>
                                             <div class="realised-descr"></div>
                                         </div>
                                         <div class="item-3 image-cover grid-elem lazy" data-bg="resources/images/static/main_page/design_projects/new8s.jpg">
                                             <div class="realised-image-overlay">
-                                                <button class="primary-outlined-round center-div">Смотреть подробнее</button>
+                                                <button class="primary-outlined-round center-div" data-toggle="modal" data-target="#imagesModal" data-index="19">Смотреть подробнее</button>
                                             </div>
                                             <div class="realised-descr"></div>
                                         </div>
@@ -1080,19 +1102,19 @@
                                     <div class="realised-grid-2">
                                         <div class="item-1 image-cover grid-elem lazy" data-bg="resources/images/static/main_page/design_projects/55ad.jpg">
                                             <div class="realised-image-overlay">
-                                                <button class="primary-outlined-round center-div">Смотреть подробнее</button>
+                                                <button class="primary-outlined-round center-div" data-toggle="modal" data-target="#imagesModal" data-index="20">Смотреть подробнее</button>
                                             </div>
                                             <div class="realised-descr"></div>
                                         </div>
                                         <div class="item-2 image-cover grid-elem lazy" data-bg="resources/images/static/main_page/design_projects/58ad.jpg">
                                             <div class="realised-image-overlay">
-                                                <button class="primary-outlined-round center-div">Смотреть подробнее</button>
+                                                <button class="primary-outlined-round center-div" data-toggle="modal" data-target="#imagesModal" data-index="21">Смотреть подробнее</button>
                                             </div>
                                             <div class="realised-descr"></div>
                                         </div>
                                         <div class="item-3 image-cover grid-elem lazy" data-bg="resources/images/static/main_page/design_projects/css6ad.jpg">
                                             <div class="realised-image-overlay">
-                                                <button class="primary-outlined-round center-div">Смотреть подробнее</button>
+                                                <button class="primary-outlined-round center-div" data-toggle="modal" data-target="#imagesModal" data-index="22">Смотреть подробнее</button>
                                             </div>
                                             <div class="realised-descr"></div>
                                         </div>
@@ -1103,7 +1125,7 @@
                     </div>
                 </section>
 
-                <section class="section position-relative">
+                <section class="section position-relative pb-5">
                     <div class="container container pt-5">
                         <h2 class="space-title text-center p-2 mt-5 mb-2">
                             <span>
@@ -1118,7 +1140,7 @@
                         <div class="row">
                             <div class="col-lg-6 col-12 mb-lg-0 mb-5">
                                 <div class="wrapper-16-9 mb-2">
-                                    <a class="content-aspect video-prev-wrapper" href="#">
+                                    <a class="cbox-video cboxElement content-aspect video-prev-wrapper" href="https://www.youtube.com/embed/mcQIGiyzHn0">
                                         <div class="video-prev image-cover lazy" data-bg="resources/images/static/main_page/video-prev1.jpg">
 
                                         </div>
@@ -1129,7 +1151,7 @@
                             </div>
                             <div class="col-lg-6 col-12">
                                 <div class="wrapper-16-9 mb-2">
-                                    <a class="content-aspect video-prev-wrapper" href="#">
+                                    <a class="cbox-video cboxElement content-aspect video-prev-wrapper" href="https://www.youtube.com/embed/AsL1AUZDPIs">
                                         <div class="video-prev image-cover lazy" data-bg="resources/images/static/main_page/video-prev2.jpg">
 
                                         </div>
@@ -1262,52 +1284,52 @@
                         <div class="achieve-grid">
                             <div>
                                 <div class="achievment anim-underline">
-                                    <img class="lazy" data-src="resources/images/static/main_page/achievments/priz3.jpg" style="width: 100%; height: auto;">
+                                    <a data-fancybox="gallery" href="resources/images/static/main_page/achievments/priz3.jpg"><img class="lazy" data-src="resources/images/static/main_page/achievments/priz3.jpg" style="width: 100%; height: auto;"></a>
                                 </div>
                             </div>
                             <div>
                                 <div class="achievment anim-underline">
-                                    <img class="lazy" data-src="resources/images/static/main_page/achievments/priz2.jpg" style="width: 100%; height: auto;">
+                                    <a data-fancybox="gallery" href="resources/images/static/main_page/achievments/priz2.jpg"><img class="lazy" data-src="resources/images/static/main_page/achievments/priz2.jpg" style="width: 100%; height: auto;"></a>
                                 </div>
                             </div>
                             <div>
                                 <div class="achievment anim-underline">
-                                    <img class="lazy" data-src="resources/images/static/main_page/achievments/priz1.jpg" style="width: 100%; height: auto;">
+                                    <a data-fancybox="gallery" href="resources/images/static/main_page/achievments/priz1.jpg"><img class="lazy" data-src="resources/images/static/main_page/achievments/priz1.jpg" style="width: 100%; height: auto;"></a>
                                 </div>
                             </div>
                             <div>
                                 <div class="achievment anim-underline">
-                                    <img class="lazy" data-src="resources/images/static/main_page/achievments/priz4.jpg" style="width: 100%; height: auto;">
+                                    <a data-fancybox="gallery" href="resources/images/static/main_page/achievments/priz4.jpg"><img class="lazy" data-src="resources/images/static/main_page/achievments/priz4.jpg" style="width: 100%; height: auto;"></a>
                                 </div>
                             </div>
                             <div>
                                 <div class="achievment anim-underline">
-                                    <img class="lazy" data-src="resources/images/static/main_page/achievments/priz5.jpg" style="width: 100%; height: auto;">
+                                    <a data-fancybox="gallery" href="resources/images/static/main_page/achievments/priz5.jpg"><img class="lazy" data-src="resources/images/static/main_page/achievments/priz5.jpg" style="width: 100%; height: auto;"></a>
                                 </div>
                             </div>
                             <div>
                                 <div class="achievment anim-underline">
-                                    <img class="lazy" data-src="resources/images/static/main_page/achievments/d67d4da3-bce1-4ac9-a4b9-df16f67a3294.jpeg" style="width: 100%; height: auto;">
+                                    <a data-fancybox="gallery" href="resources/images/static/main_page/achievments/d67d4da3-bce1-4ac9-a4b9-df16f67a3294.jpeg"><img class="lazy" data-src="resources/images/static/main_page/achievments/d67d4da3-bce1-4ac9-a4b9-df16f67a3294.jpeg" style="width: 100%; height: auto;"></a>
                                 </div>
                             </div>
                             <div>
                                 <div class="achievment anim-underline">
-                                    <img class="lazy" data-src="resources/images/static/main_page/achievments/СМ.12649-1.jpg" style="width: 100%; height: auto;">
+                                    <a data-fancybox="gallery" href="resources/images/static/main_page/achievments/СМ.12649-1.jpg"><img class="lazy" data-src="resources/images/static/main_page/achievments/СМ.12649-1.jpg" style="width: 100%; height: auto;"></a>
                                 </div>
                             </div>
                             <div>
                                 <div class="achievment anim-underline">
-                                    <img class="lazy" data-src="resources/images/static/main_page/achievments/20346080-1bac-4aea-94ba-3aa919aa041d.jpg" style="width: 100%; height: auto;">
+                                    <a data-fancybox="gallery" href="resources/images/static/main_page/achievments/20346080-1bac-4aea-94ba-3aa919aa041d.jpg"><img class="lazy" data-src="resources/images/static/main_page/achievments/20346080-1bac-4aea-94ba-3aa919aa041d.jpg" style="width: 100%; height: auto;"></a>
                                 </div>
                             </div>
                             <div>
                                 <div class="achievment anim-underline">
-                                    <img class="lazy" data-src="resources/images/static/main_page/achievments/ec6a92a0-b656-4a46-bfc5-21c97a6ea8fb.jpg" style="width: 100%; height: auto;">
+                                    <a data-fancybox="gallery" href="resources/images/static/main_page/achievments/ec6a92a0-b656-4a46-bfc5-21c97a6ea8fb.jpg"><img class="lazy" data-src="resources/images/static/main_page/achievments/ec6a92a0-b656-4a46-bfc5-21c97a6ea8fb.jpg" style="width: 100%; height: auto;"></a>
                                 </div>
                             </div>
                             <div>
                                 <div class="achievment anim-underline">
-                                    <img class="lazy" data-src="resources/images/static/main_page/achievments/1853838541.png" style="width: 100%; height: auto;">
+                                    <a data-fancybox="gallery" href="resources/images/static/main_page/achievments/1853838541.png"><img class="lazy" data-src="resources/images/static/main_page/achievments/1853838541.png" style="width: 100%; height: auto;"></a>
                                 </div>
                             </div>
                         </div>
@@ -1422,17 +1444,17 @@
                 <section class="section position-relative">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-lg-3 col-6">
-                                <img class="lazy" style="width: 100%; height: auto;" data-src="resources/images/static/main_page/in-work-1.jpg">
+                            <div class="col-lg-3 col-6 p-1">
+                                <a data-fancybox="gallery2" href="resources/images/static/main_page/in-work-1.jpg"><img class="lazy" style="width: 100%; height: auto;" data-src="resources/images/static/main_page/in-work-1.jpg"></a>
                             </div>
-                            <div class="col-lg-3 col-6">
-                                <img class="lazy" style="width: 100%; height: auto;" data-src="resources/images/static/main_page/in-work-2.jpg">
+                            <div class="col-lg-3 col-6 p-1">
+                                <a data-fancybox="gallery2" href="resources/images/static/main_page/in-work-2.jpg"><img class="lazy" style="width: 100%; height: auto;" data-src="resources/images/static/main_page/in-work-2.jpg"></a>
                             </div>
-                            <div class="col-lg-3 col-6">
-                                <img class="lazy" style="width: 100%; height: auto;" data-src="resources/images/static/main_page/in-work-3.jpg">
+                            <div class="col-lg-3 col-6 p-1">
+                                <a data-fancybox="gallery2" href="resources/images/static/main_page/in-work-3.jpg"><img class="lazy" style="width: 100%; height: auto;" data-src="resources/images/static/main_page/in-work-3.jpg"></a>
                             </div>
-                            <div class="col-lg-3 col-6">
-                                <img class="lazy" style="width: 100%; height: auto;" data-src="resources/images/static/main_page/in-work-4.jpg">
+                            <div class="col-lg-3 col-6 p-1">
+                                <a data-fancybox="gallery2" href="resources/images/static/main_page/in-work-4.jpg"><img class="lazy" style="width: 100%; height: auto;" data-src="resources/images/static/main_page/in-work-4.jpg"></a>
                             </div>
                         </div>
                     </div>
@@ -1440,7 +1462,7 @@
 
                 <section class="section position-relative">
                     <div class="container-fluid pt-5">
-                        <h2 class="space-title text-center p-2 mb-5">
+                        <h2 class="space-title text-center p-2 mb-2">
                             <span>
                                  <strong>Где мы находимся</strong>
                             </span>
@@ -1449,7 +1471,7 @@
                             <div class="map-contacts pr-5">
                                 <div class="d-flex mb-4">
                                     <div class="icon-map lazy mr-2" data-bg="resources/icons/main_page/map.png"></div>
-                                    <div class="font-s-big weight-600">
+                                    <div class="font-s-big weight-400">
                                         <div class="font-s-normal-x1-5 weight-700 uppercase">
                                             Адрес офиса
                                         </div>
@@ -1458,7 +1480,7 @@
                                 </div>
                                 <div class="d-flex mb-4">
                                     <div class="icon-map lazy mr-2" data-bg="resources/icons/main_page/time.png"></div>
-                                    <div class="font-s-big weight-600">
+                                    <div class="font-s-big weight-400">
                                         <div class="font-s-normal-x1-5 weight-700 uppercase">
                                             Часы работы
                                         </div>
@@ -1467,7 +1489,7 @@
                                 </div>
                                 <div class="d-flex">
                                     <div class="icon-map lazy mr-2" data-bg="resources/icons/main_page/phone.png"></div>
-                                    <div class="font-s-big weight-600">
+                                    <div class="font-s-big weight-400">
                                         <div class="font-s-normal-x1-5 weight-700 uppercase">
                                             <a class="map-link anim-underline" href="tel:+7495101-29-83">+7 (495) 101-29-83</a>
                                         </div>
@@ -1480,18 +1502,18 @@
                     </div>
                 </section>
 
-                <section class="info-section image-cover lazy pb-5" data-bg="resources/images/static/main_page/block2.jpeg">
+                <section class="info-section footer-section image-cover lazy pb-4" data-bg="resources/images/static/main_page/block2.jpeg">
                     <div class="container container-930 text-center">
                         <div class="info-overlay">
                             <h2>Убедитесь лично<br>в качестве нашей работы</h2>
-                            <h4>Наш главный инженер покажет вам доступные к просмотру объекты, на которых мы делаем ремонт.<br><br>Вы сможете:<br><br>—лично убедиться в аккуратности наших специалистов;<br>—увидеть интересные для себя дизайнерские решения.Оставьте заявку на ознакомительный выезд<br>по нашим объектам прямо сейчас.</h4>
+                            <h4>Наш главный инженер покажет вам доступные к просмотру объекты, на которых мы делаем ремонт.<br><br>Вы сможете:<br><br>—лично убедиться в аккуратности наших специалистов;<br>—увидеть интересные для себя дизайнерские решения.<br><br>Оставьте заявку на ознакомительный выезд<br>по нашим объектам прямо сейчас.</h4>
                         </div>
-                        <button class="shine-button anim-underline mt-2 mb-4">Оставить заявку</button>
+                        <button class="shine-button anim-underline mt-2 mb-4" data-toggle="modal" data-target="#makeRequestModal">Оставить заявку</button>
 
                         <div class="d-flex footer-block align-items-end flex-wrap justify-content-lg-between justify-content-center">
                             <div class="text-lg-left text-center mb-4">
                                 г. Москва, Ленинская Слобода 19 "Омега Плаза"<br>
-                                <button class="colored-link anim-underline politics-link line-h-120">Политика конфиденциальности</button>
+                                <button class="colored-link anim-underline politics-link line-h-120" data-toggle="modal" data-target="#politicsModal">Политика конфиденциальности</button>
                             </div>
                             <div class="text-lg-right text-center">
                                 <div class="">
@@ -1522,15 +1544,15 @@
             <div class="menu-button-line"></div>
         </button>
 
-        <!-- Modal -->
+        <!-- Modal all examples -->
         <div class="modal fade" id="allExamplesModal" tabindex="-1" role="dialog" aria-labelledby="allExamplesModalLabel" aria-hidden="true">
-            <div class="container container-930 modal-dialog dialog-common-style" role="document">
+            <div class="container container-930 modal-dialog dialog-common-style m-0" role="document">
                 <div class="modal-content">
-                    <div class="modal-header border-0">
+                    <div class="modal-header border-0 mb-lg-0 mb-4">
                         <label><input type="radio" class="examples-tab" name="examples-descr" data-target="#examplesDescr1" checked><span class="primary-outline-button mr-2">Стандарт</span></label>
                         <label><input type="radio" class="examples-tab" name="examples-descr" data-target="#examplesDescr2"><span class="primary-outline-button mr-2">Комфорт</span></label>
                         <label><input type="radio" class="examples-tab" name="examples-descr" data-target="#examplesDescr3"><span class="primary-outline-button">Премиум</span></label>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <button type="button" class="close font-s-normal-x2" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
@@ -1633,7 +1655,7 @@
                                     <div class="col-lg-4 col-12">
                                         <div class="mb-4">
                                             <div class="font-s-big uppercase letter-s-0-1 weight-700 mb-2">Стены</div>
-                                            Штукатурка стен высококачественная<br>Устройство стен из ГКЛ<br>Шпатлевание стен<br>Перепланировка<br>Возведение стен и перегородок<br>Устройство звукоизоляции (частично)<br>Устройство декоративной штукатурки<br>Окраска стен (в т.ч. декоративная)<br>Оклейка стен обоями<br>Герметизация оконных проемов<br>Устройство из ГКЛ криволинейных конструкций<br>Устройство из ГКЛ криволинейных конструкций с нишами<br>Облицовка плиткой (класса «Люкс»)<br>Устройство проемов<br>Возведение стен и перегородок<br>Нанесение венецианской штукатурки 
+                                            Штукатурка стен высококачественная<br>Устройство стен из ГКЛ<br>Шпатлевание стен<br>Перепланировка<br>Возведение стен и перегородок<br>Устройство звукоизоляции (частично)<br>Устройство декоративной штукатурки<br>Окраска стен (в т.ч. декоративная)<br>Оклейка стен обоями<br>Герметизация оконных проемов<br>Устройство из ГКЛ криволинейных конструкций<br>Устройство из ГКЛ криволинейных конструкций с нишами<br>Облицовка плиткой (класса «Люкс»)<br>Устройство проемов<br>Возведение стен и перегородок<br>Нанесение венецианской штукатурки
                                         </div>
                                     </div>
                                 </div>
@@ -1644,21 +1666,272 @@
                 </div>
             </div>
         </div>
+
+        <!-- Modal request call -->
+        <div class="modal fade" id="requestCallModal" tabindex="-1" role="dialog" aria-labelledby="requestCallModalLabel" aria-hidden="true">
+            <div id="requestCallAlert" class="alert alert-warning fade" role="alert">
+                <strong>Примите согласие на обработку персональных данных!</strong> Для отправки формы необходимо принять согласие на обработку персональных данных.
+            </div>
+            <div class="container container-930 w-100 modal-dialog dialog-common-style m-0" role="document" >
+                <div class="modal-content image-cover lazy" data-bg="resources/images/static/main_page/ordercall.jpg">
+                    <div class="modal-header border-0 mb-lg-0 mb-4">
+                        <button type="button" class="close font-s-normal-x2" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body dialog-request-call text-left">
+                        <div class="row">
+                            <div class="col-lg-5 col-12 pl-3 pr-5">
+                                <form class="confidence-validate" alert-select="#requestCallAlert">
+                                    <div class="font-s-normal-x1-7 weight-700 mb-4">Закажите звонок</div>
+                                    <div class="line-h-1-4 mb-4">
+                                        Оставьте свои контактные данные в полях ниже. Специалист позвонит вам в течение 12 минут.
+                                    </div>
+                                    <input class="form-input form-phone phone-mask w-100 mb-4" type="tel" name="phone" placeholder="Введите ваш номер телефона" autocomplete="off" required="required">
+                                    <button class="shine-button anim-underline w-100 mb-4" type="submit">Жду звонка</button>
+                                    <div class="d-flex pr-4">
+                                        <label class="confidence-checkbox my-auto mr-3"><input type="checkbox"><span></span></label>
+                                        <span class="my-auto confidence-text">Нажимая на кнопку «Жду звонка», я даю согласие на обработку персональных данных и соглашаюсь c условиями <button class="colored-link anim-underline politics-link-gray line-h-120" type="button" data-toggle="modal" data-target="#politicsModal">политики конфиденциальности</button></span>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal learn more -->
+        <div class="modal fade" id="learnMoreModal" tabindex="-1" role="dialog" aria-labelledby="learnMoreModalLabel" aria-hidden="true">
+            <div id="learnMoreAlert" class="alert alert-warning fade" role="alert">
+                <strong>Примите согласие на обработку персональных данных!</strong> Для отправки формы необходимо принять согласие на обработку персональных данных.
+            </div>
+            <div class="container container-930 w-100 modal-dialog dialog-common-style m-0" role="document" >
+                <div class="modal-content image-cover lazy" data-bg="resources/images/static/main_page/credit.jpg">
+                    <div class="modal-header border-0 mb-lg-0 mb-4">
+                        <button type="button" class="close font-s-normal-x2" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body dialog-request-call text-left">
+                        <div class="row">
+                            <div class="col-lg-5 col-12 pl-3 pr-5">
+                                <form class="confidence-validate" alert-select="#learnMoreAlert">
+                                    <div class="font-s-normal-x1-7 weight-700 mb-4">Узнайте подоробнее о спецпредложении</div>
+                                    <div class="line-h-1-4 mb-4">
+                                        Оставьте свои контактные данные в полях ниже. Специалист позвонит вам в течение 12 минут.
+                                    </div>
+                                    <input class="form-input form-line form-name w-100 mb-4" type="name" name="name" placeholder="Введите ваше имя" autocomplete="off" required="required">
+                                    <input class="form-input form-phone  phone-mask w-100 mb-4" type="tel" name="phone" placeholder="Введите ваш номер телефона" autocomplete="off" required="required">
+                                    <button class="shine-button anim-underline w-100 mb-4" type="submit">Узнать подробнее</button>
+                                    <div class="d-flex pr-4">
+                                        <label class="confidence-checkbox my-auto mr-3"><input type="checkbox"><span></span></label>
+                                        <span class="my-auto confidence-text">Нажимая на кнопку «Узнать подробнее», я даю согласие на обработку персональных данных и соглашаюсь c условиями <button class="colored-link anim-underline politics-link-gray line-h-120" type="button" data-toggle="modal" data-target="#politicsModal">политики конфиденциальности</button></span>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal make request -->
+        <div class="modal fade" id="makeRequestModal" tabindex="-1" role="dialog" aria-labelledby="makeRequestModalLabel" aria-hidden="true">
+            <div id="makeRequestAlert" class="alert alert-warning fade" role="alert">
+                <strong>Примите согласие на обработку персональных данных!</strong> Для отправки формы необходимо принять согласие на обработку персональных данных.
+            </div>
+            <div class="container container-930 w-100 modal-dialog dialog-common-style m-0" role="document" >
+                <div class="modal-content image-cover lazy" data-bg="resources/images/static/main_page/order.jpg">
+                    <div class="modal-header border-0 mb-lg-0 mb-4">
+                        <button type="button" class="close font-s-normal-x2" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body dialog-request-call text-left">
+                        <div class="row">
+                            <div class="col-lg-5 col-12 pl-3 pr-5">
+                                <form class="confidence-validate" alert-select="#makeRequestAlert">
+                                    <div class="font-s-normal-x1-7 weight-700 mb-4">Оставьте заявку на ознакомительный выезд</div>
+                                    <div class="line-h-1-4 mb-4">
+                                        Оставьте свои контактные данные в полях ниже. Специалист позвонит вам в течение 12 минут.
+                                    </div>
+                                    <input class="form-input form-line form-name w-100 mb-4" type="name" name="name" placeholder="Введите ваше имя" autocomplete="off" required="required">
+                                    <input class="form-input form-phone  phone-mask w-100 mb-4" type="tel" name="phone" placeholder="Введите ваш номер телефона" autocomplete="off" required="required">
+                                    <button class="shine-button anim-underline w-100 mb-4" type="submit">Оставить заявку</button>
+                                    <div class="d-flex pr-4">
+                                        <label class="confidence-checkbox my-auto mr-3"><input type="checkbox"><span></span></label>
+                                        <span class="my-auto confidence-text">Нажимая на кнопку «Оставить заявку», я даю согласие на обработку персональных данных и соглашаюсь c условиями <button class="colored-link anim-underline politics-link-gray line-h-120" type="button" data-toggle="modal" data-target="#politicsModal">политики конфиденциальности</button></span>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal images -->
+        <div class="modal fade" id="imagesModal" tabindex="-1" role="dialog" aria-labelledby="imagesModalLabel" aria-hidden="true">
+            <div class="container container-930 w-100 modal-dialog dialog-common-style m-0" role="document" >
+                <div class="modal-content position-relative p-0">
+                    <div class="modal-header img-modal-header border-0 mb-lg-0 mb-4">
+                        <button type="button" class="close font-s-normal-x2" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body dialog-img text-left">
+                        <div class="img-box">
+                            <div id="imagesModalSwiper" class="swiper-container h-100">
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-wrapper"></div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                        <div class="descr-box">
+                            <div class="d-flex mb-3">
+                                <div id="imgmSquareBlock" class="mr-auto">
+                                    <span id="imgmSquareWord" class="img-modal-descr">Площадь<br>квартиры</span><br>
+                                    <span class="img-modal-number">
+                                        <strong id="imgmSquare">58</strong>м²
+                                    </span>
+                                </div>
+                                <div id="imgmDaysBlock">
+                                    <span class="img-modal-descr">Срок<br>ремонта</span><br>
+                                    <span class="img-modal-number">
+                                        <strong id="imgmDays">60</strong><span id="imgmDaysWord">дней</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div id="imgmGrayLine1" class="gray-line mb-3"></div>
+                            <div id="imgmRateBlock" class="mb-3">
+                                <span class="img-modal-descr">Тариф ремонта</span><br>
+                                <span id="imgmRate" class="img-modal-number-big">
+                                    Капитальный
+                                </span>
+                            </div>
+                            <div id="imgmPriceBlock" class="mb-3">
+                                <span class="img-modal-descr">Стоимость работ</span><br>
+                                <span id="imgmPrice" class="img-modal-number-big">
+                                    377 219
+                                </span>
+                                <span class="img-modal-number-big"> ₽</span>
+                            </div>
+                            <div id="imgmMatPriceBlock" class="mb-3">
+                                <span class="img-modal-descr">Стоимость материалов</span><br>
+                                <span id="imgmMatPrice" class="img-modal-number-big">
+                                    147 089
+                                </span>
+                                <span class="img-modal-number-big"> ₽</span>
+                            </div>
+                            <div id="imgmGrayLine2" class="gray-line mb-3"></div>
+                            <div id="imgmWorkerBlock" class="img-modal-job">Прораб: <strong id="imgmWorker">Иванов С.В.</strong></div>
+                            <div id="imgmManagerBlock" class="img-modal-job">Руководитель проекта: <strong id="imgmManager">Петров Р.М.</strong></div>
+                            <div id="imgmDesignerBlock" class="img-modal-job">Главный дизайнер: <strong id="imgmDesigner">Светлана Александрова</strong></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal politics -->
+        <div class="modal fade" id="politicsModal" tabindex="-1" role="dialog" aria-labelledby="politicsModalLabel" aria-hidden="true">
+            <div class="container container-930 w-100 modal-dialog dialog-common-style m-0" role="document" >
+                <div class="modal-content">
+                    <div class="modal-header border-0 mb-lg-0 mb-0">
+                        <button type="button" class="close font-s-normal-x2" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-12 politics-model-content">
+                                <h2 class="text-center mb-5">Политика конфиденциальности</h2>
+                                <h3>1. Общие условия</h3>
+                                <p>1.1. Настоящая Политика определяет порядок обработки и защиты Обществом с ограниченной ответственностью «Новострой Ремонт» (далее – ООО «НР») информации о физических лицах (далее – Пользователь), которая может быть получена ООО «НР» при использовании Пользователем услуг/товаров, посредством сайта, сервисов, служб, программ используемых ООО «НР» (далее – Сайт, Сервисы).</p>
+                                <p>1.2. Целью настоящей Политики является обеспечение надлежащей защиты персональной информации которую Пользователь предоставляет о себе самостоятельно при использовании Сайта, Сервисов для приобретения товаров/услуг от несанкционированного доступа и разглашения.</p>
+                                <p>1.3. Отношения, связанные со сбором, хранением, распространением и защитой информации предоставляемой Пользователем, регулируются настоящей Политикой, иными официальными документами ООО «НР» и действующим законодательством Российской Федерации.</p>
+                                <p>1.4. Используя Сайт и Сервисы Пользователь выражает свое полное согласие с условиями настоящей Политики.</p>
+                                <p>1.5. В случае несогласия Пользователя с условиями настоящей Политики использование Сайта и/или каких-либо Сервисов доступных при использовании Сайта должно быть немедленно прекращено.</p>
+                                <p>1.6. В случае не согласия Пользователя в получении информации от ООО «НР» Пользователь может отписаться от рассылки: <br>
+                                	- кликнув по ссылке Отписаться внизу письма; <br>
+                                	- путем направления уведомления на электронную почту nrremont@yandex.ru или при телефонном обращении в контакт-центр.
+                                	         При поступлении уведомлений на электронную почту nrremont@yandex.ru или при телефонном обращении в контакт-центр в специальном программном обеспечении для учета действий по соответствующему Пользователю, создается обращение по итогам полученной от Пользователя информации. Обращение обрабатывается максимум в течение 24 часов.   В результате  информация о Пользователе не включается в сегмент рассылок по соответствующему региону.</p>
+
+
+                                <h3>2. Цели сбора, обработки и хранения   информации предоставляемой пользователями Сайта</h3>
+                                <p>2.1. Обработка персональных данных Пользователя осуществляется в соответствии с законодательством Российской Федерации. ООО «НР» обрабатывает персональные данные Пользователя в целях: <br>
+                                	- идентификации стороны в рамках соглашений и договоров заключаемых с ООО «НР»; <br>
+                                	- предоставления Пользователю товаров/услуг, доступа к Сайту, Сервисам; <br>
+                                	- связи с Пользователем, направлении Пользователю транзакционных писем; <br>
+                                	- направлении Пользователю сообщений рекламного и/или информационного характера — не более 1 сообщения в день; <br>
+                                	- проверки, исследования и анализа таких данных, позволяющих поддерживать и улучшать сервисы и разделы Сайта, а также разрабатывать новые сервисы и разделы Сайта; <br>
+                                	- проведение статистических и иных исследований на основе обезличенных данных.</p>
+
+
+                                <h3>3. Условия обработки персональной информации предоставленной Пользователем и ее передачи третьим лицам</h3>
+                                <p>3.1. ООО «НР» принимает все необходимые меры для защиты персональных данных Пользователя от неправомерного доступа, изменения, раскрытия или уничтожения.</p>
+                                <p>3.2. ООО «НР» предоставляет доступ к персональным данным Пользователя только тем работникам, подрядчикам которым эта информация необходима для обеспечения функционирования Сайта, Сервисов и оказания Услуг, продажи товаров.</p>
+                                <p>3.3. ООО «НР» вправе использовать предоставленную Пользователем информацию, в том числе персональные данные, в целях обеспечения соблюдения требований действующего законодательства Российской Федерации (в том числе в целях предупреждения и/или пресечения незаконных и/или противоправных действий Пользователей). Раскрытие предоставленной Пользователем информации может быть произведено лишь в соответствии с действующим законодательством Российской Федерации по требованию суда, правоохранительных органов, а равно в иных предусмотренных законодательством Российской Федерации случаях.</p>
+                                <p>3.4. ООО «НР» не проверяет достоверность информации предоставляемой Пользователем и исходит из того, что Пользователь в рамках добросовестности предоставляет достоверную и достаточную информацию, заботится о своевременности внесения изменений в ранее предоставленную информацию при появлении такой необходимости, включая но не ограничиваясь изменение номера телефона.</p>
+
+
+                                <h3>4. Условия пользования Сайтом, Сервисами</h3>
+                                <p>4.1. Пользователь при пользовании Сайтом, подтверждает, что: <br>
+                                	- обладает всеми необходимыми правами, позволяющими ему осуществлять регистрацию (создание учетной записи) и использовать Услуги сайта; <br>
+                                	- указывает достоверную информацию о себе в объемах, необходимых для пользования Услугами Сайта, обязательные для заполнения поля для дальнейшего предоставления Услуг сайта помечены специальным образом, вся иная информация предоставляется пользователем по его собственному усмотрению. <br>
+                                	- осознает, что информация на Сайте, размещаемая Пользователем о себе, может становиться доступной для третьих лиц не оговоренных в настоящей Политике и может быть скопирована и распространена ими; <br>
+                                	- ознакомлен с настоящей Политикой, выражает свое согласие с ней и принимает на себя указанные в ней права и обязанности. Ознакомление с условиями настоящей Политики и проставление галочки под ссылкой на данную Политику является письменным согласием Пользователя на сбор, хранение, обработку и передачу третьим лицам персональных данных предоставляемых Пользователем.</p>
+                                <p>4.2. ООО «НР» не проверяет достоверность получаемой (собираемой) информации о Пользователях, за исключением случаев, когда такая проверка необходима в целях исполнения обязательств перед Пользователем.</p>
+
+
+                                <h3>5. В рамках настоящей Политики под «персональной информацией Пользователя» понимаются:</h3>
+                                <p>5.1. Данные предоставленные Пользователем самостоятельно при пользовании Сайтом, Сервисами включая но, не ограничиваясь: имя, номер мобильного телефона и/или адрес электронной почты.</p>
+                                <p>5.2. Данные, которые автоматически передаются Сервисам в процессе их использования с помощью установленного на устройстве Пользователя программного обеспечения, в том числе IP-адрес, информация из cookie, информация о браузере пользователя (или иной программе, с помощью которой осуществляется доступ к Сервисам), время доступа, адрес запрашиваемой страницы.</p>
+                                <p>5.3 Иная информация о Пользователе, сбор и/или предоставление которой определено в Регулирующих документах отдельных Сервисов ООО «НР».</p>
+
+
+                                <h3>6. Изменение и удаление персональных данных</h3>
+                                <p>6.1. Пользователь может в любой момент изменить (обновить, дополнить) предоставленную им персональную информацию или её часть, а также параметры её конфиденциальности, направив уведомление на электронную почту nrremont@yandex.ru или при телефонном обращении в контакт-центр.</p>
+                                <p>6.2. Пользователь также может удалить персональную информацию направив уведомление на электронную почту nrremont@yandex.ru или при телефонном обращении в контакт-центр.</p>
+
+                                <h3>7. Изменение Политики конфиденциальности. Применимое законодательство</h3>
+                                <p>7.1. ООО «НР» имеет право вносить изменения в настоящую Политику конфиденциальности. При внесении изменений в актуальной редакции указывается дата последнего обновления. Новая редакция Политики вступает в силу с момента ее размещения, если иное не предусмотрено новой редакцией Политики. Действующая редакция всегда находится на сайте по адресу www.dom-remo.ru</p>
+                                <p>7.2. К настоящей Политике и отношениям между Пользователем и ООО «НР» возникающим в связи с применением Политики конфиденциальности, подлежит применению право Российской Федерации.</p>
+
+
+                                <h3>8. Обратная связь. Вопросы и предложения</h3>
+                                <p>8.1. Все предложения или вопросы по поводу настоящей Политики следует сообщать в Службу поддержки ООО «НР» по электронной почте nrremont@yandex.ru или по телефону +7 (495) 220-29-83 или путем направления корреспонденции по адресу: г. Москва, Ленинская Слобода 19 "Омега Плаза".</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- End document -->
 
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="jquery/jquery-3.4.1.min.js"></script>
         <script src="popper/popper.min.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="bootstrap/js/util.js"></script>
         <!-- lazyload -->
         <script src="lazyload/lazyload.min.js"></script>
         <!-- swiper -->
         <script src="swiper/js/swiper.min.js"></script>
         <!-- selectric -->
         <script src="selectric/js/jquery.selectric.min.js"></script>
+        <!-- fancybox -->
+        <script src="fancybox/js/jquery.fancybox.min.js"></script>
+        <!-- colorbox -->
+        <script src="colorbox/js/jquery.colorbox-min.js"></script>
+        <!-- maskedinput -->
+        <script src="masked_input/jquery.maskedinput.min.js"></script>
 
         <!-- Optional JavaScript -->
         <script src="js/common/elements/tooltips.js"></script>
+        <script src="js/common/elements/image_modal.js"></script>
         <script src="js/main/interface/triggers.js"></script>
         <script src="js/main/interface/main.js"></script>
         <script src="js/main/elements/calculator.js"></script>

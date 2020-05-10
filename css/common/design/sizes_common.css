@@ -13,14 +13,14 @@
 /* xs */
 @media (max-width: 575.98px) {
 	:root {
-		--default-font-size: 12px;
+		--default-font-size: 11px;
 	}
 }
 
 /* sm */
 @media (max-width: 767.98px) and (min-width: 576px) {
 	:root {
-		--default-font-size: 12px;
+		--default-font-size: 11px;
 	}
 }
 

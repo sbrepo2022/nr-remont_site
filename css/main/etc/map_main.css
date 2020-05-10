@@ -2,7 +2,7 @@
     position: absolute;
     display: inline-block;
     top: 50%;
-    left: 60%;
+    left: 58%;
     right: 2rem;
     transform: translateY(-50%);
 
@@ -14,7 +14,7 @@
     display: inline-block;
 	min-width: 3rem;
 	min-height: 3rem;
-	background-size: contain;
+    background-position: center;
 	background-repeat: no-repeat;
 }
 

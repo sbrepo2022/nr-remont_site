@@ -16,13 +16,16 @@
 }
 
 .main-title-overlay {
-    margin-top: 5rem;
+    margin-top: 4.9rem;
     background: rgba(0, 0, 0, 0.2);
 }
 
 .main-title {
-    font-size: 13rem;
+    font-size: 12rem;
     font-family: 'EVO';
+    letter-spacing: 0.6rem;
+    line-height: 12.3rem;
+    font-weight: 500;
 }
 
 /* md */

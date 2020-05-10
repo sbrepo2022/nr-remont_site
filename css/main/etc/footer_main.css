@@ -2,11 +2,7 @@
     color: var(--color-white);
 }
 
-.politics-link {
-    border-bottom: 1px dashed var(--color-white);
-    transition: all .3s ease;
-}
-
-.politics-link:hover {
-    border-color: rgba(0, 0, 0, 0);
+.footer-section {
+    padding-top: 10rem;
+    background-position: 0 70%;
 }
