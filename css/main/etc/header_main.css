@@ -1,5 +1,6 @@
 .block-header {
     background: var(--color-bg-dark) no-repeat center center;
+    background-size: cover;
     color: var(--color-white);
 }
 

@@ -96,7 +96,7 @@
                         <div class="main-title-overlay px-2 text-center pb-2 mr-3 mb-4">
                             <div class="main-title">Ремонт</div>
                             <h1 class="mb-4">под ключ по международным стандартам</h1>
-                            <button class="shine-button anim-underline mb-4">Узнать срок и стоимость</button>
+                            <button class="shine-button anim-underline mb-4" data-toggle="modal" data-target="#calculateModal">Узнать срок и стоимость</button>
                             <p class="weight-600 text-center font-s-normal-x1-25">
                                 Ответьте на 5 вопросов и узнайте примерную<br>стоимость и сроки вашего ремонта.
                             </p>
@@ -252,7 +252,7 @@
                     <div class="container">
 
                         <div class="tab-content">
-                            <h3 class="calculator-title">Калькулятор ремонта</h3>
+                            <h3 class="calculator-title uppercase">Калькулятор ремонта</h3>
                             <ul id="calculator__tab" class="calculator-items hidden-mobile">
                                 <li class="calculator-item" data-step="1" style="display:none;">
                                     <a href="#">Комната</a>
@@ -654,7 +654,7 @@
 
                 <section class="remont-calc-section image-cover lazy" data-bg="resources/images/static/main_page/bg_back.jpg">
                     <div class="container">
-                        <h2 class="remont-calc-header text-center">Калькулятор ремонта</h2>
+                        <h2 class="remont-calc-header text-center mt-5">Калькулятор ремонта</h2>
                         <div class="text-center mb-5">5 шагов расчета стоимости ремонта</div>
 
                         <form method="post" accept-charset="UTF-8" class="muform" enctype="multipart/form-data" onsubmit="yaCounter56062279.reachGoal ('sp1'); return true;">
@@ -910,7 +910,7 @@
                 <section id="examples" class="section position-relative">
                     <img class="img-cases-bottom lazy" data-src="resources/images/static/main_page/cases_bottom.jpg">
                     <div class="container container-930 pt-5">
-                        <div class="d-flex">
+                        <div class="d-flex mb-lg-5 mb-0">
                             <h2 class="section-title d-inline-block mb-5 mr-auto">
                                 <span>
                                      <strong>Проекты</strong><br>
@@ -1034,7 +1034,7 @@
                 <section class="section position-relative">
                     <img class="img-cases-bottom lazy" data-src="resources/images/static/main_page/cases_bottom.jpg">
                     <div class="container container-930 pt-5">
-                        <div class="d-flex">
+                        <div class="d-flex mb-lg-5 mb-0">
                             <h2 class="section-title d-inline-block mb-5 mr-auto">
                                 <span>
                                      <strong>Дизайн проекты</strong><br>
@@ -1441,7 +1441,7 @@
                     </div>
                 </section>
 
-                <section class="section position-relative">
+                <section class="section position-relative pb-0">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-lg-3 col-6 p-1">
@@ -1461,7 +1461,7 @@
                 </section>
 
                 <section class="section position-relative">
-                    <div class="container-fluid pt-5">
+                    <div class="container-fluid pt-3">
                         <h2 class="space-title text-center p-2 mb-2">
                             <span>
                                  <strong>Где мы находимся</strong>
@@ -1689,7 +1689,7 @@
                                     </div>
                                     <input class="form-input form-phone phone-mask w-100 mb-4" type="tel" name="phone" placeholder="Введите ваш номер телефона" autocomplete="off" required="required">
                                     <button class="shine-button anim-underline w-100 mb-4" type="submit">Жду звонка</button>
-                                    <div class="d-flex pr-4">
+                                    <div class="d-flex pr-3">
                                         <label class="confidence-checkbox my-auto mr-3"><input type="checkbox"><span></span></label>
                                         <span class="my-auto confidence-text">Нажимая на кнопку «Жду звонка», я даю согласие на обработку персональных данных и соглашаюсь c условиями <button class="colored-link anim-underline politics-link-gray line-h-120" type="button" data-toggle="modal" data-target="#politicsModal">политики конфиденциальности</button></span>
                                     </div>
@@ -1724,13 +1724,77 @@
                                     <input class="form-input form-line form-name w-100 mb-4" type="name" name="name" placeholder="Введите ваше имя" autocomplete="off" required="required">
                                     <input class="form-input form-phone  phone-mask w-100 mb-4" type="tel" name="phone" placeholder="Введите ваш номер телефона" autocomplete="off" required="required">
                                     <button class="shine-button anim-underline w-100 mb-4" type="submit">Узнать подробнее</button>
-                                    <div class="d-flex pr-4">
+                                    <div class="d-flex pr-3">
                                         <label class="confidence-checkbox my-auto mr-3"><input type="checkbox"><span></span></label>
                                         <span class="my-auto confidence-text">Нажимая на кнопку «Узнать подробнее», я даю согласие на обработку персональных данных и соглашаюсь c условиями <button class="colored-link anim-underline politics-link-gray line-h-120" type="button" data-toggle="modal" data-target="#politicsModal">политики конфиденциальности</button></span>
                                     </div>
                                 </form>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal calculate -->
+        <div class="modal fade" id="calculateModal" tabindex="-1" role="dialog" aria-labelledby="calculateModalLabel" aria-hidden="true">
+            <div id="calculateAlert" class="alert alert-warning fade" role="alert">
+                <strong>Примите согласие на обработку персональных данных!</strong> Для отправки формы необходимо принять согласие на обработку персональных данных.
+            </div>
+            <div class="container container-930 w-100 modal-dialog dialog-common-style m-0" role="document" >
+                <div class="modal-content p-0">
+                    <div class="modal-header calculate-header border-0 mb-lg-0 mb-4">
+                        <button type="button" class="close font-s-normal-x2" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body dialog-request-call text-left p-0">
+                        <form class="confidence-validate" alert-select="#calculateAlert">
+                            <div id="calcModalTabs" class="tab-content">
+                                <div id="calcModalTab1" class="tab-pane fade show active">
+                                    <div class="d-flex position-relative image-contain calculate-modal-bg lazy" data-bg="resources/images/static/main_page/calc1.jpg">
+                                        <div class="calculate-side d-lg-block d-none lazy" data-bg="resources/images/static/main_page/calculate.jpg">
+                                            <div class="position-relative">
+                                                <div class="calculate-side-el-1">за</div>
+                                                <div class="calculate-side-el-2">6</div>
+                                                <div class="calculate-side-el-3">мин</div>
+                                                <div class="calculate-side-el-4">Узнайте примерный <br>срок и стоимость <br>вашего ремонта</div>
+                                            </div>
+                                        </div>
+                                        <div class="calculate-modal-content">
+                                            <div class="calculate-title mb-3">Вы собираетесь ремонтировать квартиру в новостройке или «вторичке»?</div>
+                                            <div class="row mb-4">
+                                                <div class="col-lg-6 col-12">
+                                                    <label class="primary-radio"><input type="radio" name="remont-cat-1" checked><span></span>Новостройка</label>
+                                                </div>
+                                                <div class="col-lg-6 col-12">
+                                                    <label class="primary-radio"><input type="radio" name="remont-cat-1"><span></span>Вторичное жилье</label>
+                                                </div>
+                                            </div>
+                                            <button class="shine-button anim-underline mt-1" type="button" data-toggle="tab-calc-modal" data-target="#calcModalTab2">Следующий шаг →</button>
+                                        </div>
+                                        <div class="calculate-modal-step">шаг 1/5</div>
+                                    </div>
+                                </div>
+                                <div id="calcModalTab2" class="tab-pane fade">
+                                    hello
+                                </div>
+                                <div id="calcModalTab5" class="tab-pane fade row">
+                                    <div class="col-lg-5 col-12 pl-3 pr-5">
+                                        <div class="font-s-normal-x1-7 weight-700 mb-4">Инженер уже приступил к расчету проекта</div>
+                                        <div class="line-h-1-4 mb-4">
+                                            Введите ваш номер телефона и узнайте примерный срок, стоимость ремонта в течение 6 минут.
+                                        </div>
+                                        <input class="form-input form-phone  phone-mask w-100 mb-4" type="tel" name="phone" placeholder="Введите ваш номер телефона" autocomplete="off" required="required">
+                                        <button class="shine-button anim-underline w-100 mb-4 px-0" type="submit">Узнать срок и стоимость</button>
+                                        <div class="d-flex pr-3">
+                                            <label class="confidence-checkbox my-auto mr-3"><input type="checkbox"><span></span></label>
+                                            <span class="my-auto confidence-text">Нажимая на кнопку «Узнать срок и стоимость», я даю согласие на обработку персональных данных и соглашаюсь c условиями <button class="colored-link anim-underline politics-link-gray line-h-120" type="button" data-toggle="modal" data-target="#politicsModal">политики конфиденциальности</button></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -1759,7 +1823,7 @@
                                     <input class="form-input form-line form-name w-100 mb-4" type="name" name="name" placeholder="Введите ваше имя" autocomplete="off" required="required">
                                     <input class="form-input form-phone  phone-mask w-100 mb-4" type="tel" name="phone" placeholder="Введите ваш номер телефона" autocomplete="off" required="required">
                                     <button class="shine-button anim-underline w-100 mb-4" type="submit">Оставить заявку</button>
-                                    <div class="d-flex pr-4">
+                                    <div class="d-flex pr-3">
                                         <label class="confidence-checkbox my-auto mr-3"><input type="checkbox"><span></span></label>
                                         <span class="my-auto confidence-text">Нажимая на кнопку «Оставить заявку», я даю согласие на обработку персональных данных и соглашаюсь c условиями <button class="colored-link anim-underline politics-link-gray line-h-120" type="button" data-toggle="modal" data-target="#politicsModal">политики конфиденциальности</button></span>
                                     </div>

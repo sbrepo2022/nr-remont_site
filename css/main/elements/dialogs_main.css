@@ -193,3 +193,81 @@
 #imagesModalSwiper > .swiper-button-prev, #imagesModalSwiper > .swiper-button-next {
     color: #dcdcdc;
 }
+
+.calculate-side {
+    width: 241px;
+    height: 538px;
+    flex-shrink: 0;
+    padding-top: 16.25rem;
+    color: var(--color-white);
+    font-weight: 600;
+    line-height: 100%;
+}
+
+.calculate-header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.calculate-modal-content {
+    padding: 3.6rem;
+    padding-top: 7.8rem;
+    padding-bottom: 7.8rem;
+}
+
+.calculate-title {
+    font-size: 28px;
+    line-height: 120%;
+    font-weight: 700;
+}
+
+.calculate-side-el-1 {
+    position: absolute;
+    left: 40px;
+    top: 5px;
+    font-size: 1.25rem;
+}
+
+.calculate-side-el-2 {
+    position: absolute;
+    left: 40px;
+    top: -5px;
+    font-size: 12.5rem;
+    line-height: 100%;
+}
+
+.calculate-side-el-3 {
+    position: absolute;
+    left: 145px;
+    top: 130px;
+    font-size: 1.25rem;
+}
+
+.calculate-side-el-4 {
+    position: absolute;
+    left: 40px;
+    top: 170px;
+    font-size: 15px;
+    line-height: 120%;
+    font-weight: 500;
+}
+
+.calculate-modal-step {
+    font-size: 11px;
+    line-height: 120%;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+
+    position: absolute;
+    left: 0;
+    right: 2rem;
+    bottom: 2rem;
+    text-align: right;
+}
+
+.calculate-modal-bg {
+    background-position: right bottom;
+}

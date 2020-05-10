@@ -63,6 +63,18 @@ function Interface() {
         },
 
         {
+            event: 'click',
+            selector: '[data-toggle="tab-calc-modal"]',
+            callback: function () {
+                let href = $(this).attr('data-target');
+                $('#calcModalTabs > .tab-pane').removeClass('show');
+                $('#calcModalTabs > .tab-pane').removeClass('active');
+                $(href).tab('show');
+                console.log(href);
+            }
+        },
+
+        {
             event: 'submit',
             selector: '.confidence-validate',
             callback: function () {
