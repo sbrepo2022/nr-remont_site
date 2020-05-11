@@ -605,4 +605,13 @@ $(() => {
     $('[data-target="#imagesModal"]').on('click', function () {
         showImageModal(images_modal_swiper, image_modal_options[$(this).attr('data-index')]);
     });
+
+    $('#calculateSquareSlider > input').bootstrapSlider({
+        min: 30,
+        max: 200,
+        step: 1,
+        value: 60,
+    }).on('slide', function (obj) {
+        $('#calcSliderResult').html(obj.value);
+    });
 });

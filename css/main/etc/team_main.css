@@ -41,6 +41,12 @@
     height: 30rem;
 }
 
+@media (max-width: 991.98px) {
+    .team-swiper-container > .swiper-wrapper {
+        height: 15rem;
+    }
+}
+
 .team-pagination-bullet {
     height: 0.75rem !important;
     width: 0.75rem !important;

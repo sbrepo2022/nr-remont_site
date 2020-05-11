@@ -110,3 +110,7 @@
     left: 0px;
     bottom: -4rem;
 }
+
+.examples-section {
+    padding-bottom: 10rem !important;
+}

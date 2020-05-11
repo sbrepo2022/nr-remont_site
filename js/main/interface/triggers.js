@@ -46,7 +46,6 @@ function Interface() {
                 $('#examplesDescrTabContent > .tab-pane').removeClass('show');
                 $('#examplesDescrTabContent > .tab-pane').removeClass('active');
                 $(href).tab('show');
-                console.log(href);
             }
         },
 
@@ -58,7 +57,6 @@ function Interface() {
                 $('#calcTabs > .tab-pane').removeClass('show');
                 $('#calcTabs > .tab-pane').removeClass('active');
                 $(href).tab('show');
-                console.log(href);
             }
         },
 
@@ -70,7 +68,6 @@ function Interface() {
                 $('#calcModalTabs > .tab-pane').removeClass('show');
                 $('#calcModalTabs > .tab-pane').removeClass('active');
                 $(href).tab('show');
-                console.log(href);
             }
         },
 
@@ -86,6 +83,16 @@ function Interface() {
                     $($(this).attr('alert-select')).addClass('show');
                     return false;
                 }
+            }
+        },
+
+        {
+            event: 'click',
+            selector: '#calcToResult',
+            callback: function () {
+                let radio = $('input[name="remont-cat-5"]:checked');
+                $('#calcPresentImg').css('background-image', 'url(' + $(radio).attr('data-pimage') + ')');
+                $('#calcPresentText').html($(radio).attr('data-ptext'));
             }
         },
     ];

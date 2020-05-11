@@ -212,9 +212,16 @@
 }
 
 .calculate-modal-content {
+    flex-grow: 1;
     padding: 3.6rem;
     padding-top: 7.8rem;
-    padding-bottom: 7.8rem;
+    padding-bottom: 3.6rem;
+}
+
+@media (max-width: 991.98px) {
+    .calculate-modal-content {
+        padding-top: 3.6rem;
+    }
 }
 
 .calculate-title {
@@ -270,4 +277,94 @@
 
 .calculate-modal-bg {
     background-position: right bottom;
+}
+
+.calc-slider {
+    width: 70%;
+    font-size: .6875rem;
+    line-height: 120%;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+}
+
+@media (max-width: 991.98px) {
+    .calc-slider {
+        width: 100%;
+    }
+}
+
+.calc-slider-result {
+    font-size: 1.5rem;
+    font-weight: 600;
+    flex-grow: 1;
+}
+
+.calc-slider-result > strong {
+    font-size: 3.625rem;
+}
+
+#calculateSquareSlider {
+    width: 85%;
+}
+
+#calculateSquareSlider .slider {
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+}
+
+#calculateSquareSlider .slider-handle {
+    box-shadow: 0 0 0.5rem rgba(0,0,0,.2);
+    border: .5rem solid var(--color-white);
+    height: 1.75rem;
+    width: 1.75rem;
+    background: var(--color-primary);
+    transform: translateY(-50%);
+}
+
+#calculateSquareSlider .slider-track {
+    height: 100%;
+}
+
+#calculateSquareSlider .slider-selection {
+    background: none;
+    background-color: var(--color-primary);
+    box-shadow: none;
+}
+
+#calculateSquareSlider .slider-track-high {
+    background-color: rgb(238, 228, 212);
+}
+
+.calc-last-tab {
+    padding-left: 4.5rem;
+    padding-top: 4.5rem;
+    padding-right: 4.5rem;
+    padding-bottom: 4.5rem;
+    background-position: right 0;
+}
+
+.calc-result-img {
+    padding: 0 1rem 0 9rem;
+}
+
+.calc-present {
+    font-size: 0.9375rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.calc-present > strong {
+    font-size: 1.5rem;
+    line-height: 120%;
+    text-transform: uppercase;
+    margin-bottom: 0.3125rem;
+    font-weight: 700;
+}
+
+#calcPresentImg {
+    background-position: center;
+    height: 21rem;
 }

@@ -20,6 +20,9 @@
         <!-- colorbox -->
         <link rel="stylesheet" href="colorbox/css/colorbox.css">
 
+        <!-- slider -->
+        <link rel="stylesheet" href="slider/css/bootstrap-slider.min.css">
+
         <!-- Optional CSS -->
 
         <!-- Common CSS -->
@@ -907,7 +910,7 @@
                     </div>
                 </section>
 
-                <section id="examples" class="section position-relative">
+                <section id="examples" class="section examples-section position-relative">
                     <img class="img-cases-bottom lazy" data-src="resources/images/static/main_page/cases_bottom.jpg">
                     <div class="container container-930 pt-5">
                         <div class="d-flex mb-lg-5 mb-0">
@@ -1031,7 +1034,7 @@
                     </div>
                 </section>
 
-                <section class="section position-relative">
+                <section class="section examples-section position-relative">
                     <img class="img-cases-bottom lazy" data-src="resources/images/static/main_page/cases_bottom.jpg">
                     <div class="container container-930 pt-5">
                         <div class="d-flex mb-lg-5 mb-0">
@@ -1517,9 +1520,9 @@
                             </div>
                             <div class="text-lg-right text-center">
                                 <div class="">
-                                    <a class="icon-normal mr-4 lazy" href="https://wa.me/74951888587" data-bg="resources/icons/main_page/whatsapp.svg"></a>
-                                    <a class="icon-normal mr-4 lazy" href="https://www.instagram.com/nrremont_/" data-bg="resources/icons/main_page/instagram.svg"></a>
-                                    <a class="icon-normal lazy" href="https://www.facebook.com/novostroyremont/" data-bg="resources/icons/main_page/facebook.svg"></a>
+                                    <a class="icon-normal mr-4 lazy" href="https://wa.me/74951888587" data-bg="resources/icons/main_page/whatsapp.png"></a>
+                                    <a class="icon-normal mr-4 lazy" href="https://www.instagram.com/nrremont_/" data-bg="resources/icons/main_page/instagram.png"></a>
+                                    <a class="icon-normal lazy" href="https://www.facebook.com/novostroyremont/" data-bg="resources/icons/main_page/facebook.png"></a>
                                 </div>
                                 <a class="colored-link anim-underline font-s-normal-x1-5 line-h-120" href="#">8 (495) 188-85-87</a>
                                 <div class="font-s-normal line-h-120">с 9:00 до 22:00 ежедневно</div>
@@ -1777,19 +1780,141 @@
                                     </div>
                                 </div>
                                 <div id="calcModalTab2" class="tab-pane fade">
-                                    hello
-                                </div>
-                                <div id="calcModalTab5" class="tab-pane fade row">
-                                    <div class="col-lg-5 col-12 pl-3 pr-5">
-                                        <div class="font-s-normal-x1-7 weight-700 mb-4">Инженер уже приступил к расчету проекта</div>
-                                        <div class="line-h-1-4 mb-4">
-                                            Введите ваш номер телефона и узнайте примерный срок, стоимость ремонта в течение 6 минут.
+                                    <div class="d-flex position-relative image-contain calculate-modal-bg lazy" data-bg="">
+                                        <div class="calculate-side d-lg-block d-none lazy" data-bg="resources/images/static/main_page/calculate.jpg">
+                                            <div class="position-relative">
+                                                <div class="calculate-side-el-1">за</div>
+                                                <div class="calculate-side-el-2">6</div>
+                                                <div class="calculate-side-el-3">мин</div>
+                                                <div class="calculate-side-el-4">Узнайте примерный <br>срок и стоимость <br>вашего ремонта</div>
+                                            </div>
                                         </div>
-                                        <input class="form-input form-phone  phone-mask w-100 mb-4" type="tel" name="phone" placeholder="Введите ваш номер телефона" autocomplete="off" required="required">
-                                        <button class="shine-button anim-underline w-100 mb-4 px-0" type="submit">Узнать срок и стоимость</button>
-                                        <div class="d-flex pr-3">
-                                            <label class="confidence-checkbox my-auto mr-3"><input type="checkbox"><span></span></label>
-                                            <span class="my-auto confidence-text">Нажимая на кнопку «Узнать срок и стоимость», я даю согласие на обработку персональных данных и соглашаюсь c условиями <button class="colored-link anim-underline politics-link-gray line-h-120" type="button" data-toggle="modal" data-target="#politicsModal">политики конфиденциальности</button></span>
+                                        <div class="calculate-modal-content">
+                                            <div class="calculate-title mb-3">Сколько комнат в вашей квартире?</div>
+                                            <div class="row mb-4 text-center">
+                                                <div class="col-lg-3 col-6">
+                                                    <label class="img-primary-radio image-contain lazy" data-bg="resources/images/static/main_page/calc2.png"><input type="radio" name="remont-cat-2" checked><span></span>1</label>
+                                                </div>
+                                                <div class="col-lg-3 col-6">
+                                                    <label class="img-primary-radio image-contain lazy" data-bg="resources/images/static/main_page/calc3.png"><input type="radio" name="remont-cat-2"><span></span>2</label>
+                                                </div>
+                                                <div class="col-lg-3 col-6">
+                                                    <label class="img-primary-radio image-contain lazy" data-bg="resources/images/static/main_page/calc4.png"><input type="radio" name="remont-cat-2"><span></span>3</label>
+                                                </div>
+                                                <div class="col-lg-3 col-6">
+                                                    <label class="img-primary-radio image-contain lazy" data-bg="resources/images/static/main_page/calc5.png"><input type="radio" name="remont-cat-2"><span></span>4+</label>
+                                                </div>
+                                            </div>
+                                            <button class="shine-button anim-underline mt-1" type="button" data-toggle="tab-calc-modal" data-target="#calcModalTab3">Следующий шаг →</button>
+                                        </div>
+                                        <div class="calculate-modal-step">шаг 2/5</div>
+                                    </div>
+                                </div>
+                                <div id="calcModalTab3" class="tab-pane fade">
+                                    <div class="d-flex position-relative image-contain calculate-modal-bg lazy" data-bg="resources/images/static/main_page/calc1.jpg">
+                                        <div class="calculate-side d-lg-block d-none lazy" data-bg="resources/images/static/main_page/calculate.jpg">
+                                            <div class="position-relative">
+                                                <div class="calculate-side-el-1">за</div>
+                                                <div class="calculate-side-el-2">6</div>
+                                                <div class="calculate-side-el-3">мин</div>
+                                                <div class="calculate-side-el-4">Узнайте примерный <br>срок и стоимость <br>вашего ремонта</div>
+                                            </div>
+                                        </div>
+                                        <div class="calculate-modal-content">
+                                            <div class="calculate-title mb-3">Укажите площадь вашей квартиры</div>
+                                            <div class="d-flex mb-4 flex-wrap">
+                                                <div class="calc-slider">
+                                                    <div class="d-flex mb-2">
+                                                        <span class="mr-auto">30 м²</span>
+                                                        <span>200 м² и больше</span>
+                                                    </div>
+                                                    <div id="calculateSquareSlider">
+                                                        <input>
+                                                    </div>
+                                                </div>
+                                                <div class="calc-slider-result text-lg-right text-left">
+                                                    <strong id="calcSliderResult">40</strong>
+                                                    м²
+                                                </div>
+                                            </div>
+                                            <button class="shine-button anim-underline mt-1" type="button" data-toggle="tab-calc-modal" data-target="#calcModalTab4">Следующий шаг →</button>
+                                        </div>
+                                        <div class="calculate-modal-step">шаг 3/5</div>
+                                    </div>
+                                </div>
+                                <div id="calcModalTab4" class="tab-pane fade">
+                                    <div class="d-flex position-relative image-contain calculate-modal-bg lazy" data-bg="resources/images/static/main_page/calc1.jpg">
+                                        <div class="calculate-side d-lg-block d-none lazy" data-bg="resources/images/static/main_page/calculate.jpg">
+                                            <div class="position-relative">
+                                                <div class="calculate-side-el-1">за</div>
+                                                <div class="calculate-side-el-2">6</div>
+                                                <div class="calculate-side-el-3">мин</div>
+                                                <div class="calculate-side-el-4">Узнайте примерный <br>срок и стоимость <br>вашего ремонта</div>
+                                            </div>
+                                        </div>
+                                        <div class="calculate-modal-content">
+                                            <div class="calculate-title mb-3">Какой ремонт вас интересует?</div>
+                                            <div class="row mb-4">
+                                                <div class="col-lg-4 col-12">
+                                                    <label class="primary-radio"><input type="radio" name="remont-cat-4" checked><span></span>До 45 м²<div>Капитальный ремонт для небольшой квартиры.</div></label>
+                                                </div>
+                                                <div class="col-lg-4 col-12">
+                                                    <label class="primary-radio"><input type="radio" name="remont-cat-4"><span></span>Комфорт<div>Монтаж всех инженерных систем, полов, потолка, установка новой сантехники и электроники.</div></label>
+                                                </div>
+                                                <div class="col-lg-4 col-12">
+                                                    <label class="primary-radio"><input type="radio" name="remont-cat-4"><span></span>Премиум<div>Капитальный ремонт с применением материалов и техники бизнес-класса.</div></label>
+                                                </div>
+                                            </div>
+                                            <button class="shine-button anim-underline mt-1" type="button" data-toggle="tab-calc-modal" data-target="#calcModalTab5">Следующий шаг →</button>
+                                        </div>
+                                        <div class="calculate-modal-step">шаг 4/5</div>
+                                    </div>
+                                </div>
+                                <div id="calcModalTab5" class="tab-pane fade">
+                                    <div class="d-flex position-relative image-contain calculate-modal-bg lazy" data-bg="resources/images/static/main_page/calc1.jpg">
+                                        <div class="calculate-side d-lg-block d-none lazy" data-bg="resources/images/static/main_page/calculate.jpg">
+                                            <div class="position-relative">
+                                                <div class="calculate-side-el-1">за</div>
+                                                <div class="calculate-side-el-2">6</div>
+                                                <div class="calculate-side-el-3">мин</div>
+                                                <div class="calculate-side-el-4">Узнайте примерный <br>срок и стоимость <br>вашего ремонта</div>
+                                            </div>
+                                        </div>
+                                        <div class="calculate-modal-content">
+                                            <div class="calculate-title mb-3">Какой подарок вы хотите получить?</div>
+                                            <div class="row mb-4">
+                                                <div class="col-lg-6 col-12">
+                                                    <label class="primary-radio"><input type="radio" name="remont-cat-5" data-pimage="resources/images/static/main_page/result1.png" data-ptext="Монтаж натяжного потолка" checked><span></span>Монтаж потолка<div>Монтаж натяжного потолка во всей квартире.</div></label>
+                                                </div>
+                                                <div class="col-lg-6 col-12">
+                                                    <label class="primary-radio"><input type="radio" name="remont-cat-5" data-pimage="resources/images/static/main_page/result2.png" data-ptext="Скидка 10% на все работы"><span></span>Скидка<div>Скидка 10% на все работы.</div></label>
+                                                </div>
+                                            </div>
+                                            <button id="calcToResult" class="shine-button anim-underline mt-1" type="button" data-toggle="tab-calc-modal" data-target="#calcModalTab6">Следующий шаг →</button>
+                                        </div>
+                                        <div class="calculate-modal-step">шаг 5/5</div>
+                                    </div>
+                                </div>
+                                <div id="calcModalTab6" class="tab-pane fade image-contain calc-last-tab lazy" data-bg="resources/images/static/main_page/circle.jpg">
+                                    <div class="row">
+                                        <div class="col-lg-5 col-12">
+                                            <div class="font-s-normal-x1-7 weight-700 mb-4">Инженер уже приступил к расчету проекта</div>
+                                            <div class="line-h-1-4 mb-4">
+                                                Введите ваш номер телефона и узнайте примерный срок, стоимость ремонта в течение 6 минут.
+                                            </div>
+                                            <input class="form-input form-phone  phone-mask w-100 mb-4" type="tel" name="phone" placeholder="Введите ваш номер телефона" autocomplete="off" required="required">
+                                            <button class="shine-button anim-underline w-100 mb-4 px-0" type="submit">Узнать срок и стоимость</button>
+                                            <div class="d-flex pr-3">
+                                                <label class="confidence-checkbox my-auto mr-3"><input type="checkbox"><span></span></label>
+                                                <span class="my-auto confidence-text">Нажимая на кнопку «Узнать срок и стоимость», я даю согласие на обработку персональных данных и соглашаюсь c условиями <button class="colored-link anim-underline politics-link-gray line-h-120" type="button" data-toggle="modal" data-target="#politicsModal">политики конфиденциальности</button></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-7 d-lg-block d-none calc-result-img">
+                                            <div id="calcPresentImg" class="image-contain mb-4"></div>
+                                            <div class="calc-present">
+                                                <strong>Ваш подарок</strong><br>
+                                                <span id="calcPresentText"></span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -1992,6 +2117,8 @@
         <script src="colorbox/js/jquery.colorbox-min.js"></script>
         <!-- maskedinput -->
         <script src="masked_input/jquery.maskedinput.min.js"></script>
+        <!-- slider -->
+        <script src="slider/js/bootstrap-slider.min.js"></script>
 
         <!-- Optional JavaScript -->
         <script src="js/common/elements/tooltips.js"></script>
