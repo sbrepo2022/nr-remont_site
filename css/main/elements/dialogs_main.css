@@ -368,3 +368,15 @@
     background-position: center;
     height: 21rem;
 }
+
+.calc-back {
+    position: absolute;
+    left: 40px;
+    top: 25px;
+    font-size: .6875rem;
+    line-height: 140%;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+}
