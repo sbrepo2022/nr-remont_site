@@ -1,5 +1,4 @@
 .page-wrapper {
-    width: calc(100% + 285px);
     margin-left: -285px;
 
     transition: all .3s ease;
@@ -13,7 +12,7 @@
 
 .page {
     position: relative;
-    width: calc(100% - 285px);
+    width: 100vw;
     margin-left: 285px;
 
     overflow-x: hidden;

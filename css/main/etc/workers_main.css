@@ -57,9 +57,12 @@
 }
 
 .work-count-block {
+    display: inline-block;
     height: 8.375rem;
+    max-width: 28.125rem;
     padding-left: 5rem;
     padding-top: 1rem;
+    text-align: left;
 }
 
 .work-count-block > h3 {
