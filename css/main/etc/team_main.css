@@ -4,12 +4,13 @@
     background-color: var(--color-white);
     color: var(--color-black);
     padding: 1rem 2rem 1rem 2rem;
+    border-radius: 5px;
 
     transition: all .3s ease;
 }
 
 .team-tab.active, .team-tab:hover {
-    background-color: var(--color-accent);
+    background-color: var(--color-primary);
     color: var(--color-white);
 }
 
@@ -30,7 +31,7 @@
 }
 
 .team-tab.active::after {
-    border-top-color: var(--color-accent);
+    border-top-color: var(--color-primary);
 }
 
 .team-swiper-container {

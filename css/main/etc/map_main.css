@@ -16,6 +16,7 @@
 	min-height: 3rem;
     background-position: center;
 	background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .map-link, .map-link:hover {

@@ -59,7 +59,7 @@
 
     background: #fc0;
     box-shadow: 0 .375rem .675rem rgba(0,0,0,.2);
-    border-radius: 0.625rem;
+    border-radius: 5px;
     font-size: 1.125rem;
     background-color: var(--color-white);
     font-family: 'Solomon Sans';
@@ -86,7 +86,7 @@ input:checked + .btn-calc-choose, input:checked + .btn-calc-choose:hover {
 .btn-calc-tab {
     background: #fc0;
     box-shadow: 0 4px 0 #dcc485;
-    border-radius: 0.625rem;
+    border-radius: 5px;
     font-size: 1.5rem;
     color: var(--color-black);
     text-transform: none;
