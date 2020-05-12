@@ -3,17 +3,12 @@
     background-size: cover;
     color: var(--color-white);
     background-image: url('../../../resources/images/static/main_page/header.jpg');
-    min-height: 100vh;
 }
 
 @media (max-width: 767.98px) {
     .block-header {
         background-image: url('../../../resources/images/static/main_page/headerm.jpg');
     }
-}
-
-.block-header > .container {
-    min-height: 100vh;
 }
 
 .logo-block {
@@ -29,7 +24,7 @@
 }
 
 .main-title-overlay {
-    margin-top: 4.9rem;
+    margin-top: 3rem;
     background: rgba(0, 0, 0, 0.2);
 }
 
