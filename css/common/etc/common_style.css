@@ -1,21 +1,17 @@
 .page-wrapper {
-    margin-left: -285px;
-
-    transition: all .3s ease;
-
     overflow-x: hidden;
-}
-
-.page-wrapper.open-nav {
-    margin-left: 0px;
 }
 
 .page {
     position: relative;
-    width: 100vw;
-    margin-left: 285px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    transition: all .3s ease;
+}
 
-    overflow-x: hidden;
+.open-nav > .page {
+    left: 285px;
 }
 
 .nav-open-button {

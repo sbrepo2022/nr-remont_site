@@ -1,11 +1,16 @@
 .sidebar {
     position: fixed;
     top: 0;
-    height: 100vh;
-    display: block;
+    bottom: 0;
+    left: -285px;
     width: 285px;
     background-color: var(--color-sidebar-bg);
-    overflow: hidden
+    overflow: hidden;
+    transition: all .3s ease;
+}
+
+.open-nav > .sidebar {
+    left: 0;
 }
 
 .sidebar > ul {
