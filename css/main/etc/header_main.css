@@ -1,12 +1,14 @@
 .block-header {
     background: var(--color-bg-dark) no-repeat center center;
-    background-size: cover;
     color: var(--color-white);
+    background-size: 120%;
+    background-position: center;
     background-image: url('../../../resources/images/static/main_page/header.jpg');
 }
 
 @media (max-width: 767.98px) {
     .block-header {
+        background-size: cover;
         background-image: url('../../../resources/images/static/main_page/headerm.jpg');
     }
 }
