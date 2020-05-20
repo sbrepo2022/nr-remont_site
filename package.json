@@ -1,0 +1,22 @@
+{
+  "name": "nr-remont",
+  "version": "1.0.0",
+  "description": "nr-remont project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://sbrepo_bitbucket@bitbucket.org/sbrepo_bitbucket/nr-remont.git"
+  },
+  "author": "srg",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/sbrepo_bitbucket/nr-remont#readme",
+  "devDependencies": {
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify-css": "^1.2.4"
+  }
+}
