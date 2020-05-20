@@ -1,7 +1,7 @@
 .block-header {
     background: var(--color-bg-dark) no-repeat center center;
     color: var(--color-white);
-    background-size: 120%;
+    background-size: 100%;
     background-position: center;
     background-image: url('../../../resources/images/static/main_page/header.jpg');
 }

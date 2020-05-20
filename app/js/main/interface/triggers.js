@@ -95,6 +95,15 @@ function Interface() {
                 $('#calcPresentText').html($(radio).attr('data-ptext'));
             }
         },
+
+        {
+            event: 'click',
+            selector: '#requestModalButton',
+            callback: function () {
+                $('#allExamplesModal').modal('hide');
+            }
+        },
+
     ];
 
     /* метод проходится по массиву bindings и регистрирует обработчики */
