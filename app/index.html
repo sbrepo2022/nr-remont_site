@@ -5,6 +5,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+        <!-- icon -->
+        <link rel="shortcut icon" href="/resources/icons/main_page/favicon.ico" type="image/x-icon">
+
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 
@@ -22,6 +25,9 @@
 
         <!-- slider -->
         <link rel="stylesheet" href="slider/css/bootstrap-slider.min.css">
+
+        <!-- snackbar -->
+        <link rel="stylesheet" href="snackbar/css/snackbar.min.css">
 
         <!-- Optional CSS -->
 
@@ -61,7 +67,6 @@
         <link rel="stylesheet" href="css/main/elements/animations_main.css">
         <link rel="stylesheet" href="css/main/elements/dialogs_main.css">
         <link rel="stylesheet" href="css/main/utils/resources/icons_main.css">
-		<link rel="shortcut icon" href="/resources/icons/main_page/favicon.ico" type="image/x-icon">
         <!-- endbuild -->
         <title>Ремонт квартир под ключ в Москве и МО | NR-REMONT</title>
     </head>
@@ -2130,6 +2135,8 @@
         <script src="masked_input/jquery.maskedinput.min.js"></script>
         <!-- slider -->
         <script src="slider/js/bootstrap-slider.min.js"></script>
+        <!-- snackbar -->
+        <script src="snackbar/js/snackbar.min.js"></script>
 
         <!-- Optional JavaScript -->
         <!-- build:common_js -->
@@ -2166,18 +2173,27 @@
                         success:function(data){
                             if(data['status'] == 200)
                             {
-                                alert('Спасибо, ваша заявка была отправлена');
+                                Snackbar.show({
+                                    text: 'Спасибо! Ваша заявка была отправлена',
+                                    pos: 'top-center'
+                                });
                             }
                             else
                             {
-                                alert('Ошибка');
+                                Snackbar.show({
+                                    text: 'Ошибка!',
+                                    pos: 'top-center'
+                                });
                             }
                         }
                     });
                 }
                 else
                 {
-                    alert('Нужно ввести телефон');
+                    Snackbar.show({
+                        text: 'Нужно заполнить поле с номером телефона',
+                        pos: 'top-center'
+                    });
                 }
             })
 
@@ -2216,21 +2232,30 @@
                             success:function(data){
                                 if(data['status'] == 200)
                                 {
-                                    alert('Заявка успешно отправлена');
+                                    Snackbar.show({
+                                        text: 'Спасибо! Ваша заявка была отправлена',
+                                        pos: 'top-center'
+                                    });
                                 }
                                 else
                                 {
-                                    alert('Ошибка');
+                                    Snackbar.show({
+                                        text: 'Ошибка!',
+                                        pos: 'top-center'
+                                    });
                                 }
                             },
                             error:function(){
-                                alert('s');
+                                //alert('s');
                             }
                         });
                     }
                     else
                     {
-                        alert('Нужно ввести телефон');
+                        Snackbar.show({
+                            text: 'Нужно заполнить поле с номером телефона',
+                            pos: 'top-center'
+                        });
                     }
                 }
                 else
@@ -2262,18 +2287,27 @@
                             success:function(data){
                                 if(data['status'] == 200)
                                 {
-                                    alert('Заявка успешно отправлена');
+                                    Snackbar.show({
+                                        text: 'Спасибо! Ваша заявка была отправлена',
+                                        pos: 'top-center'
+                                    });
                                 }
                                 else
                                 {
-                                    alert('Ошибка');
+                                    Snackbar.show({
+                                        text: 'Ошибка',
+                                        pos: 'top-center'
+                                    });
                                 }
                             }
                         });
                     }
                     else
                     {
-                        alert('Нужно ввести телефон');
+                        Snackbar.show({
+                            text: 'Нужно заполнить поле с номером телефона',
+                            pos: 'top-center'
+                        });
                     }
                 }
             })
@@ -2303,11 +2337,17 @@
                         success:function(data){
                             if(data['status'] == 200)
                                 {
-                                    alert('Заявка успешно отправлена');
+                                    Snackbar.show({
+                                        text: 'Спасибо! Ваша заявка была отправлена',
+                                        pos: 'top-center'
+                                    });
                                 }
                                 else
                                 {
-                                    alert('Ошибка');
+                                    Snackbar.show({
+                                        text: 'Ошибка',
+                                        pos: 'top-center'
+                                    });
                                 }
                         }
                     });
@@ -2315,7 +2355,10 @@
                 }
                 else
                 {
-                    alert('Нужно ввести телефон');
+                    Snackbar.show({
+                        text: 'Нужно заполнить поле с номером телефона',
+                        pos: 'top-center'
+                    });
                 }
             })
 
@@ -2335,18 +2378,27 @@
                         success:function(data){
                             if(data['status'] == 200)
                                 {
-                                    alert('Заявка успешно отправлена');
+                                    Snackbar.show({
+                                        text: 'Спасибо! Ваша заявка была отправлена',
+                                        pos: 'top-center'
+                                    });
                                 }
                                 else
                                 {
-                                    alert('Ошибка');
+                                    Snackbar.show({
+                                        text: 'Ошибка',
+                                        pos: 'top-center'
+                                    });
                                 }
                         }
                     })
                 }
                 else
                 {
-                    alert('Нужно заполнить поля');
+                    Snackbar.show({
+                        text: 'Нужно заполнить поле с номером телефона',
+                        pos: 'top-center'
+                    });
                 }
             })
             //tekss
@@ -2366,18 +2418,27 @@
                         success:function(data){
                             if(data['status'] == 200)
                                 {
-                                    alert('Заявка успешно отправлена');
+                                    Snackbar.show({
+                                        text: 'Спасибо! Ваша заявка была отправлена',
+                                        pos: 'top-center'
+                                    });
                                 }
                                 else
                                 {
-                                    alert('Ошибка');
+                                    Snackbar.show({
+                                        text: 'Ошибка',
+                                        pos: 'top-center'
+                                    });
                                 }
                         }
                     })
                 }
                 else
                 {
-                    alert('Нужно заполнить поля');
+                    Snackbar.show({
+                        text: 'Нужно заполнить поле с номером телефона',
+                        pos: 'top-center'
+                    });
                 }
             })
 
@@ -2395,18 +2456,27 @@
                         success:function(data){
                             if(data['status'] == 200)
                                 {
-                                    alert('Заявка успешно отправлена');
+                                    Snackbar.show({
+                                        text: 'Спасибо! Ваша заявка была отправлена',
+                                        pos: 'top-center'
+                                    });
                                 }
                                 else
                                 {
-                                    alert('Ошибка');
+                                    Snackbar.show({
+                                        text: 'Ошибка',
+                                        pos: 'top-center'
+                                    });
                                 }
                         }
                     })
                 }
                 else
                 {
-                    alert('Нужно заполнить поля');
+                    Snackbar.show({
+                        text: 'Нужно заполнить поле с номером телефона',
+                        pos: 'top-center'
+                    });
                 }
             })
         </script>
