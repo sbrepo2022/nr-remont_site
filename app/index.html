@@ -265,7 +265,7 @@
                         <h2 class="remont-calc-header text-center mt-5">Калькулятор ремонта</h2>
                         <div class="text-center mb-5">5 шагов расчета стоимости ремонта</div>
 
-                        <form method="post" accept-charset="UTF-8" class="muform" enctype="multipart/form-data">
+                        <form id="remCalcForm" method="post" accept-charset="UTF-8" class="muform" enctype="multipart/form-data">
                             <div id="calcTabs" class="tab-content">
                                 <div class="tab-pane fade show active" id="calcStep1">
                                     <div class="font-s-normal-x1-25 color-black mb-2">Шаг 1 из 5</div>
@@ -1148,18 +1148,18 @@
                             <span class="accent-line align-middle"></span>
                         </div>
                         <div class="row">
-                            <div class="col-lg-6 col-12 mb-lg-0 mb-5">
+                            <div class="col-lg-6 col-12 mb-lg-4 mb-5">
                                 <div class="wrapper-16-9 mb-2">
                                     <a class="cbox-video cboxElement content-aspect video-prev-wrapper" href="https://www.youtube.com/embed/mcQIGiyzHn0">
                                         <div class="video-prev image-cover lazy" data-bg="resources/images/static/main_page/video-prev1.jpg">
 
                                         </div>
-                                        <span class="video-time-label">1:13</span>
+                                        <span class="video-time-label">3:35</span>
                                     </a>
                                 </div>
                                 <span class="weight-700">ЖК "Vander Park", 85 м²</span>
                             </div>
-                            <div class="col-lg-6 col-12">
+                            <div class="col-lg-6 col-12 mb-lg-4 mb-5">
                                 <div class="wrapper-16-9 mb-2">
                                     <a class="cbox-video cboxElement content-aspect video-prev-wrapper" href="https://www.youtube.com/embed/glnPYHPgNb8">
                                         <div class="video-prev image-cover lazy" data-bg="resources/images/static/main_page/prev.jpg">
@@ -1169,6 +1169,31 @@
                                     </a>
                                 </div>
                                 <span class="weight-700">ЖК "Триколор", 36 м²</span>
+                            </div>
+                            <div class="col-lg-6 col-12 mb-lg-4 mb-5">
+                                <div class="wrapper-16-9 mb-2">
+                                    <a class="cbox-video cboxElement content-aspect video-prev-wrapper" href="https://www.youtube.com/embed/QJ4TErsy8zM">
+                                        <div class="video-prev image-cover lazy" data-bg="resources/images/static/main_page/video-prev3.jpg">
+
+                                        </div>
+                                        <span class="video-time-label">1:38</span>
+                                    </a>
+                                </div>
+                                <span class="weight-700"></span>
+                            </div>
+                            <div class="col-lg-6 col-12 mb-lg-4 mb-5">
+                                <div class="wrapper-16-9 mb-2">
+                                    <a class="cbox-video cboxElement content-aspect video-prev-wrapper" href="https://www.youtube.com/embed/7hu4j152ZTI">
+                                        <div class="video-prev image-cover lazy" data-bg="resources/images/static/main_page/video-prev4.jpg">
+
+                                        </div>
+                                        <span class="video-time-label">1:34</span>
+                                    </a>
+                                </div>
+                                <span class="weight-700"></span>
+                            </div>
+                            <div class="col-12 text-center">
+                                <a class="dashed-link anim-underline font-s-big" href="https://www.youtube.com/channel/UCxKMqfA-ky7cDRtQQ5vNPCw">Посмотреть больше</a>
                             </div>
                         </div>
                     </div>
@@ -2187,6 +2212,11 @@
                             }
                         }
                     });
+                    /* переход на первую вкладку */
+                    let href = "#calcStep1";
+                    $('#calcTabs > .tab-pane').removeClass('show');
+                    $('#calcTabs > .tab-pane').removeClass('active');
+                    $(href).tab('show');
                 }
                 else
                 {
